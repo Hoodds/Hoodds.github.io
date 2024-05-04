@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Pestañas</title>
+    <link rel="stylesheet" href="../styles/styleejercicios2.css">
+</head>
+<body>
+
+<header>
+    <h1>Encabezado</h1>
+</header>
+
+<nav><!-- Elemento de navegación vacío --></nav>
+
+<main>
+    <div class="tabs">
+        <button class="tablink" onclick="openTab('tab1')">Pestaña 1</button>
+        <button class="tablink" onclick="openTab('tab2')">Pestaña 2</button>
+    </div>
+
+    <div id="tab1" class="tabcontent">
+        <h2>Contenido de la Pestaña 1</h2>
+        <p>Este es el contenido de la primera pestaña.</p>
+    </div>
+
+    <div id="tab2" class="tabcontent">
+        <h2>Contenido de la Pestaña 2</h2>
+        <p>Este es el contenido de la segunda pestaña.</p>
+    </div>
+</main>
+
+<footer>
+    <p>Pie de página &copy; 2024</p>
+</footer>
+
+<script src="../js/scriptejercicios2.js"></script>
+</body>
+</html>
