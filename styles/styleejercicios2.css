@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0;	
 }
 
 header, footer {
@@ -11,16 +11,21 @@ header, footer {
     padding: 20px 0;
 }
 
+main{
+	background-color:lightblue;
+}
 .main-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 80vh; /* Ajusta según sea necesario */
+	
 }
 
 .tabs {
     margin-bottom: 20px;
+	background-color:lightblue;
 }
 
 .tablink {
@@ -29,6 +34,7 @@ header, footer {
     outline: none;
     cursor: pointer;
     padding: 10px 20px;
+	margin-left: 10px;
     margin-right: 10px;
     border-radius: 5px;
     transition: background-color 0.3s;
@@ -48,29 +54,13 @@ header, footer {
 	display: -moz -flex;
 	display: flex;
 	flex-direction: row;
-	background-color:red;
+	background-color:lightblue;
 }
 
-#d1{
+#d1, #d2, #d3, #d4{
 	width: 25%;
 	height: 100%;
-	background-color: #C7D0EB;
-}
-
-#d2{
-	width: 25%;
-	height: 100%;
-}
-
-#d3{
-	width: 25%;
-	height: 100%;
-	background-color: #C7D0EB;
-}
-
-#d4{
-	width: 25%;
-	height: 100%;
+	
 }
 
 footer {
