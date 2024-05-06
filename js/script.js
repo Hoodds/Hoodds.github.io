@@ -13,13 +13,36 @@
         }, 1000); // Actualiza cada segundo
     });
 
-document.addEventListener('DOMContentLoaded', function() {
+ document.addEventListener('DOMContentLoaded', function() {
         // Define tu API key de OpenWeatherMap
-        var apiKey = 'caea1d5dc036daadff5aff8da540eac0'; // Reemplaza 'TU_API_KEY' con tu propia API key
+        var apiKey = 'caea1d5dc036daadff5aff8da540eac0';
 
         // URL de la API de OpenWeatherMap para obtener datos meteorológicos de Bilbao
         var city = 'Bilbao';
         var apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=' + apiKey + '&units=metric';
+
+        // Función para traducir las descripciones del tiempo
+        function traducirDescripcion(descripcion) {
+            // Mapea las descripciones del tiempo de inglés a español
+            var traducciones = {
+                'clear sky': 'cielo despejado',
+                'few clouds': 'pocas nubes',
+                'scattered clouds': 'nubes dispersas',
+                'broken clouds': 'nubes rotas',
+                'overcast clouds': 'nublado',
+                'light rain': 'lluvia ligera',
+                'moderate rain': 'lluvia moderada',
+                'heavy intensity rain': 'lluvia intensa',
+                'shower rain': 'lluvia',
+                'thunderstorm': 'tormenta',
+                'snow': 'nieve',
+                'mist': 'niebla'
+                // Puedes agregar más traducciones según sea necesario
+            };
+
+            // Devuelve la traducción correspondiente o la descripción original si no hay traducción
+            return traducciones[descripcion] || descripcion;
+        }
 
         // Selecciona el elemento donde se mostrará el widget del tiempo
         var weatherWidgetElement = document.getElementById('weatherWidget');
@@ -32,8 +55,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 var weatherDescription = data.weather[0].description;
                 var temperature = data.main.temp;
 
-                // Actualiza el contenido del elemento con la información del tiempo
-                weatherWidgetElement.textContent = 'Tiempo en Bilbao: ' + weatherDescription + ', Temperatura: ' + temperature + '°C';
+                // Traduce la descripción del tiempo
+                var descripcionTraducida = traducirDescripcion(weatherDescription);
+
+                // Actualiza el contenido del elemento con la información del tiempo en español
+                weatherWidgetElement.textContent = 'Tiempo en Bilbao: ' + descripcionTraducida + ', Temperatura: ' + temperature + '°C';
             })
             .catch(error => {
                 console.error('Error al obtener datos meteorológicos:', error);
