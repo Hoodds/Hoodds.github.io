@@ -1,7 +1,11 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;	
+    padding: 0;
+    height: 100vh; /* Establece la altura del body al 100% del viewport height */
+    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+	display: flex;
+    flex-direction: column; /* Establece la dirección de los elementos hijos como columna */
 }
 
 header{
@@ -12,6 +16,7 @@ header{
 	display: flex;
 	display-content: row;
 }
+
 footer {
 	background-color: #333;
     color: #fff;
@@ -20,9 +25,11 @@ footer {
 }
 
 header img {
-    margin-left: 20px; /* Margen izquierdo para la imagen */
+    margin-left: 20px; /* Margen izquierdo para la imagen */	
 }
 
 main{
 	background-color:lightblue;
+	flex: 1; /* Hace que el main ocupe todo el espacio restante vertical */
+    overflow-y: auto; /* Agrega desplazamiento vertical si es necesario */
 }
