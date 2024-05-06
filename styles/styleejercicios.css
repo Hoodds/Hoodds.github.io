@@ -1,16 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
+	background-image: url("../images/fondo.jpg");
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
     margin: 0;
     padding: 0;
-	height: 100vh; /* Establece la altura del body al 100% del viewport height */
+    height: 100vh; /* Establece la altura del body al 100% del viewport height */
     overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
 	display: flex;
     flex-direction: column; /* Establece la dirección de los elementos hijos como columna */
+	color: #fff;
 }
-
 header{
-    background-color: #333;
-    color: #fff;
     text-align: center;
     padding: 20px 0;
 	display: flex;
@@ -18,20 +17,21 @@ header{
 }
 
 footer{
-	background-color: #333;
-    color: #fff;
     text-align: center;
-    padding: 20px 0;
+   
 }
 
 header img {
     margin-left: 20px; /* Margen izquierdo para la imagen */
 }
 
-main{
-	background-color:lightblue;
+main{	
 	flex: 1; /* Hace que el main ocupe todo el espacio restante vertical */
     overflow-y: auto; /* Agrega desplazamiento vertical si es necesario */
+}
+main img{
+	width: 190px;
+	height: 190px;
 }
 
 .main-content {
@@ -45,7 +45,6 @@ main{
 
 .tabs {
     margin-bottom: 20px;
-	background-color:lightblue;
 }
 
 .tablink {
@@ -69,16 +68,13 @@ main{
     text-align: center;
 }
 
-#tab1{	
+#tab1, #tab2{	
 	display: -webkit -flex;
 	display: -moz -flex;
 	display: flex;
 	flex-direction: row;
-	background-color:lightblue;
 }
 
 #d1, #d2, #d3, #d4{
 	width: 25%;
-	height: 100%;
-	
 }
