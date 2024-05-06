@@ -8,12 +8,18 @@ header, footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 0;display: flex;
+	display-content: row;
+}
+
+header img {
+    margin-left: 20px; /* Margen izquierdo para la imagen */
 }
 
 main{
 	background-color:lightblue;
 }
+
 .main-content {
     display: flex;
     flex-direction: column;
@@ -61,11 +67,4 @@ main{
 	width: 25%;
 	height: 100%;
 	
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
 }
