@@ -11,7 +11,8 @@ function openTab(tabName) {
         tabLinks[i].classList.remove("active");
     }
 	// Mostramos el contenido de la pestaña seleccionada y le añadimos la clase 'active' al botón correspondiente
-    document.getElementById(tabName).style.display = "block";
+    document.getElementById(tabName).style.display = "flex";
+	// Cambia 'display' a 'flex'
     event.currentTarget.classList.add("active");
 }
 
