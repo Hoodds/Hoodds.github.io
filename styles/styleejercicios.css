@@ -4,12 +4,20 @@ body {
     padding: 0;	
 }
 
-header, footer {
+header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;display: flex;
+    padding: 20px 0;
+	display: flex;
 	display-content: row;
+}
+footer{
+	background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+	text-align: center;
 }
 
 header img {
@@ -40,7 +48,7 @@ main{
     outline: none;
     cursor: pointer;
     padding: 10px 20px;
-	margin-left: 10px;
+	margin-left: 20px;
     margin-right: 10px;
     border-radius: 5px;
     transition: background-color 0.3s;
