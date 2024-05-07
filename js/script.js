@@ -9,7 +9,7 @@
             var currentDateTime = dayjs().format('YYYY-MM-DD HH:mm:ss');
 
             // Actualiza el contenido del elemento con la fecha y hora actual
-            currentDateTimeElement.textContent = 'Fecha y Hora: ' + currentDateTime;
+            currentDateTimeElement.textContent =/* 'Fecha y Hora: ' +*/ currentDateTime;
         }, 1000); // Actualiza cada segundo
     });
 
@@ -59,7 +59,7 @@
                 var descripcionTraducida = traducirDescripcion(weatherDescription);
 
                 // Actualiza el contenido del elemento con la información del tiempo en español
-                weatherWidgetElement.textContent = 'Tiempo en Bilbao: ' + descripcionTraducida + ', Temperatura: ' + temperature + '°C';
+                weatherWidgetElement.textContent =/* 'Tiempo en Bilbao: ' +*/ descripcionTraducida + ', Temperatura: ' + temperature + '°C';
             })
             .catch(error => {
                 console.error('Error al obtener datos meteorológicos:', error);
