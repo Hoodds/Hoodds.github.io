@@ -8,12 +8,12 @@ body {
 	display: flex;
     flex-direction: column; /* Establece la dirección de los elementos hijos como columna */
 	color: #fff;
-	animation: moveBackground 20s linear infinite; /* Aplica la animación al fondo */
+	animation: moveBackground 200S linear infinite; /* Aplica la animación al fondo */
 }
 /* Definir la animación para el movimiento de ida y vuelta */
 @keyframes moveBackground {
     0%, 100% {
-        background-position: 0 0; /* Posición inicial y final: izquierda */
+        background-position: 0 200%; /* Posición inicial y final: izquierda */
     }
     50% {
         background-position: 100% 0; /* Posición en el medio: derecha */
