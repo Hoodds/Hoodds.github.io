@@ -21,8 +21,15 @@ header{
 	font-family:Unutterable-z8E8X;
 }
 
+header .text-container {
+    text-align: center;
+    flex-grow: 1; /* Permite que el contenedor de texto crezca */
+}
+
 header h1{
 	font-size: 40pt;
+	font-family: "Curse of the Zombie";
+	word-spacing: 30px;
 }
 
 nav{	
@@ -33,32 +40,29 @@ nav{
 }
 
 nav p{
-	margin-right: 30px;
+	margin-right: 10px;
 }
 
 main{
-	height: 72%;
+	height: 62%;
 	flex: 1; /* Hace que el main ocupe todo el espacio restante vertical */
     overflow-y: auto; /* Agrega desplazamiento vertical si es necesario */	
 }
 
-.contenedor {
-    display: flex;
-    height: 100%; /* Altura del div contenedor (ajustar según necesidad) */
-    background-color: rgba(26, 5, 10, 0.7); /* Color de fondo con opacidad */
-    border-radius: 5px;
-    
-}
-
 footer{
-	height: 6%;
-    text-align: center;
+	display:flex;
+	flex-direction: row
+	height: 16%;
+    justify-content: center;
 }
 
-.image-container {
-    position: relative;
-    width: 200px; /* Ajusta el tamaño según sea necesario */
-    height: 200px;
+.contenedorimagen {
+    position: absolute;
+	top: 10px; /* Espacio desde la parte superior */
+    left: 20px; /* Espacio desde la derecha */    
+    padding: 20px;
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: 150px;
     overflow: hidden;
 }
 
@@ -77,23 +81,15 @@ footer{
 }
 
 /* Cambia la opacidad de la segunda imagen al pasar el cursor sobre el contenedor */
-.image-container:hover #first-image {
+.contenedorimagen:hover #first-image {
     opacity: 0;
 }
 
-.image-container:hover #second-image {
+.contenedorimagen:hover #second-image {
     opacity: 1;
 }
 
-.arribaderecha{
-    position: absolute;
-    top: 20px; /* Espacio desde la parte superior */
-    right: 20px; /* Espacio desde la derecha */
-    background-color: rgba(26, 5, 10, 0.7); /* Color de fondo con opacidad */
-    padding: 20px;
-    border-radius: 5px;
-    
-}
+
 
 @font-face{
 	font-family: 'Lovecraftian';	src:url("../fonts/Lovecraftian/Lovecraftian.woff"),url("../fonts/Lovecraftian/Lovecraftian.ttf"),url("../fonts/Lovecraftian/Lovecraftian.eot"),url("../fonts/Lovecraftian/Lovecraftian.svg");
@@ -102,6 +98,10 @@ footer{
 @font-face{
 	font-family: 'Unutterable-z8E8X';
 	src:url("../fonts/Unutterable-z8E8X/Unutterable-z8E8X.woff"),url("../fonts/Unutterable-z8E8X/Unutterable-z8E8X.ttf"),url("../fonts/Unutterable-z8E8X/Unutterable-z8E8X.eot"),url("../fonts/Unutterable-z8E8X/Unutterable-z8E8X.svg");
+}
+
+@font-face{
+	font-family: 'Curse of the Zombie';	src:url("../fonts/Curse of the Zombie/Curse of the Zombie.woff"),url("../fonts/Curse of the Zombie/Curse of the Zombie.ttf"),url("../fonts/Curse of the Zombie/Curse of the Zombie.eot"),url("../fonts/Curse of the Zombie/Curse of the Zombie.svg");
 }
 
 /* Definir la animación para el movimiento de ida y vuelta del fondo*/

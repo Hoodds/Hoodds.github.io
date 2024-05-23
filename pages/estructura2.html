@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto DAW1: Lander Ribera</title>
-    <link rel="stylesheet" href="../styles/styleestructura.css">	
-	<script src="../js/weather.js"></script>
+    <link rel="stylesheet" href="../styles/styleestructura.css">
+	<script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
+	<script src="../js/script.js"></script>
 </head>
 	
 <body>
@@ -18,7 +19,10 @@
 		<h1>EL CLUB LOVECRAFT</h1>
 		<p>"Explora narrativas de horror más allá del tiempo y el espacio"</p>
 	</div>
-	
+	<div class="arribaderecha">
+		<div id="currentDateTime"></div>
+		<div id="weatherWidget"></div>
+	</div>
 </header>
 
 <nav><p>SU VIDA</p><p>SU OBRA</p><p>SU ÉPOCA</p><p>SUS CITAS CÉLEBRES</p><p>QUIÉNES SOMOS</p></nav>
@@ -28,9 +32,7 @@
 </main>
 
 <footer>
-    <p>Lander Ribera &copy; 2024</p>
-	<div id="weather-icon"></div>
-    <div id="weather-temp"></div>    
+    <p>Página creada por Lander Ribera &copy; 2024</p>
 </footer>	
 </body>
 </html>
