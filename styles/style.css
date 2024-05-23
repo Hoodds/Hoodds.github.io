@@ -120,11 +120,11 @@ footer{
 }
 
 /* Cambia la opacidad de la segunda imagen al pasar el cursor sobre el contenedor */
-.image-container:hover #first-image {
+.contenedorimagen:hover #first-image {
     opacity: 0;
 }
 
-.image-container:hover #second-image {
+.contenedorimagen:hover #second-image {
     opacity: 1;
 }
 
