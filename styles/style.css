@@ -72,15 +72,15 @@ main{
     flex: 1; /* Ocupa la mitad izquierda del contenedor */
     display: flex;
     flex-direction: column; /* Distribuye los elementos en columnas (arriba y abajo) */
-    
-	
+    margin-left: 15px;
+	font-size: 18px;
 }
 
 .derecha {
     flex: 1; /* Ocupa la mitad derecha del contenedor */
     border-left: 1px solid black; /* Separador visual entre la parte izquierda y derecha */
 	padding: 10px; /* Espaciado interior para separar el contenido del borde */
-	
+	margin-right: 15px;
 }
 
 .arriba, .abajo {
