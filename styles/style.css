@@ -15,7 +15,7 @@ body {
 header{
 	height: 22%;
     text-align: center;
-    padding: 20px 0;
+    padding-bottom: 40px;
 	display: flex;
 	display-content: row;
 	font-family:Unutterable-z8E8X;
@@ -23,24 +23,44 @@ header{
 
 header .text-container {
     text-align: center;
-    flex-grow: 1; /* Permite que el contenedor de texto crezca */
+    flex-grow: 1; /* Permite que el contenedor de texto crezca */	
 }
 
 header h1{
 	font-size: 40pt;
 	font-family: "Curse of the Zombie";
-	word-spacing: 30px;
+	word-spacing: 30px;		
 }
 
+header p {
+    font-weight: bold;
+    font-size: 15pt;
+    background-color: rgba(26, 5, 10, 0.7); /* Color de fondo con opacidad */
+    border-radius: 5px;
+    display: inline; /* Hace que el fondo solo ocupe el espacio del texto */    
+}
+
+
 nav{	
+	min-height: 30px;
+	padding-top: 20px;
 	margin-left: 30px;
 	display: flex;
 	flex-direction: row;
-	
+	justify-content: center;
+	font-family:Unutterable-z8E8X;
 }
 
-nav p{
+nav a{
+	color: white;
+	text-decoration: none;
 	margin-right: 10px;
+	background-color: rgba(26, 5, 10, 0.7); /* Color de fondo con opacidad */
+    border-radius: 5px;
+}
+nav a:hover {
+            font-weight: bold;
+            font-size: 14pt;
 }
 
 main{
@@ -53,19 +73,13 @@ main{
     display: flex;
     height: 100%; /* Altura del div contenedor (ajustar según necesidad) */
     background-color: rgba(26, 5, 10, 0.7); /* Color de fondo con opacidad */
-    border-radius: 5px;
-    
+    border-radius: 5px;    
 }
 .contenedorcitas {
     display: flex;
     height: 100%; /* Altura del div contenedor (ajustar según necesidad) */
     background-color: rgba(26, 5, 10, 0.7); /* Color de fondo con opacidad */
     border-radius: 5px;    
-}
-
-.contenedorcitas p {
-	font-family: Lovecraftian;
-	font-size: 20pt;
 }
 
 .izquierda {
@@ -81,13 +95,13 @@ main{
     border-left: 1px solid black; /* Separador visual entre la parte izquierda y derecha */
 	padding: 10px; /* Espaciado interior para separar el contenido del borde */
 	margin-right: 15px;
+	font-family:Unutterable-z8E8X;
 }
 
 .arriba, .abajo {
     flex: 1; /* Cada parte (arriba y abajo) ocupa la mitad de la parte izquierda */
     border-bottom: 1px solid black; /* Separador visual entre la parte arriba y abajo */
-    padding: 10px; /* Espaciado interior para separar el contenido del borde */
-	
+    padding: 10px; /* Espaciado interior para separar el contenido del borde */	
 }
 
 footer{
@@ -97,14 +111,13 @@ footer{
     justify-content: center;
 }
 
-
 .contenedorimagen {
     position: absolute;
 	top: 10px; /* Espacio desde la parte superior */
-    left: 20px; /* Espacio desde la derecha */    
-    padding: 20px;
-    width: 150px; /* Ajusta el tamaño según sea necesario */
-    height: 150px;
+    left: 50px; /* Espacio desde la derecha */    
+    padding: 40px;
+    width: 145px; /* Ajusta el tamaño según sea necesario */
+    height: 145px;
     overflow: hidden;
 }
 
@@ -136,9 +149,6 @@ footer{
     justify-content: center;
     align-items: center;
     font-size: 20px; /* Tamaño de fuente opcional */
-}
-@font-face{
-	font-family: 'Lovecraftian';	src:url("../fonts/Lovecraftian/Lovecraftian.woff"),url("../fonts/Lovecraftian/Lovecraftian.ttf"),url("../fonts/Lovecraftian/Lovecraftian.eot"),url("../fonts/Lovecraftian/Lovecraftian.svg");
 }
 
 @font-face{
