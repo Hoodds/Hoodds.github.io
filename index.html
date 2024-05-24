@@ -50,10 +50,8 @@
 			GALERÍA DE IMÁGENES
 			<div class="gallery-container">
     			<div class="thumbnails-container">
-        			<div class="thumbnails">
-						
-						<img src="images/mitosgrande3.jpg" alt="Imagen 3">
-						
+        			<div class="thumbnails">						
+						<img src="images/mitosgrande3.jpg" alt="Imagen 3">						
 						<img src="images/mitosgrande5.jpg" alt="Imagen 5">
 						<img src="images/mitosgrande2.jpg" alt="Imagen 6">
 						<img src="images/mitosgrande7.jpg" alt="Imagen 7">
@@ -74,7 +72,16 @@
 </main>
 
 <footer>
-    <p>Lander Ribera &copy; 2024</p>
+	<div class="qr"><img id="qrcode-small" src="images/qrcodepeq.png" alt="QR Code"></div>
+
+<div class="full-image-overlay" id="qrcode-overlay">
+    <div class="full-image-container">
+        <span class="close-btn" id="qrcode-close-btn">&times;</span>
+        <img class="full-image" src="images/qrcode.png" alt="Código QR Grande">
+    </div>
+</div>
+
+    <div><img src="images/redessociales.png"></div>
 	<div id="weather-icon"></div>
     <div id="weather-temp"></div>    
 </footer>	

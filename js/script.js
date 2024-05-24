@@ -4,6 +4,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const fullImageOverlay = document.querySelector('.full-image-overlay');
   const fullImage = document.querySelector('.full-image');
   const closeBtn = document.querySelector('.close-btn');
+  const qrcodeSmall = document.getElementById('qrcode-small');
+  const qrcodeOverlay = document.getElementById('qrcode-overlay');
+  const qrcodeCloseBtn = document.getElementById('qrcode-close-btn');
+
+qrcodeSmall.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'block';
+});
+
+qrcodeCloseBtn.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'none';
+});
+
 
   thumbnails.querySelectorAll('img').forEach((thumbnail) => {
     thumbnail.addEventListener('click', () => {

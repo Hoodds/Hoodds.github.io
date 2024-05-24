@@ -105,11 +105,20 @@ main{
 }
 
 footer{
+	padding-top: 5px;
 	display:flex;
 	flex-direction: row
 	height: 6%;
     justify-content: center;
+	font-family:Unutterable-z8E8X;
 }
+.qr{
+	padding-right: 5px;
+}
+#qrcode-small {
+    cursor: pointer;
+}
+
 
 .contenedorimagen {
     position: absolute;
