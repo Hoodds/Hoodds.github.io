@@ -42,13 +42,14 @@ header p {
 
 
 nav{	
-	min-height: 30px;
-	padding-top: 20px;
-	margin-left: 30px;
+	height: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;	
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	font-family:Unutterable-z8E8X;
+	
 }
 
 nav a{
@@ -57,6 +58,7 @@ nav a{
 	margin-right: 10px;
 	background-color: rgba(26, 5, 10, 0.7); /* Color de fondo con opacidad */
     border-radius: 5px;
+	
 }
 nav a:hover {
             font-weight: bold;
@@ -67,20 +69,19 @@ main{
 	height: 72%;
 	flex: 1; /* Hace que el main ocupe todo el espacio restante vertical */
     overflow-y: auto; /* Agrega desplazamiento vertical si es necesario */	
+	padding:1px;
+}
+main h4{
+	text-align: center;
 }
 
 .contenedor {
     display: flex;
     height: 100%; /* Altura del div contenedor (ajustar según necesidad) */
-    background-color: rgba(26, 5, 10, 0.7); /* Color de fondo con opacidad */
+    background-color: rgba(26, 5, 10, 0.7); /*  Color de fondo con opacidad */
     border-radius: 5px;    
 }
-.contenedorcitas {
-    display: flex;
-    height: 100%; /* Altura del div contenedor (ajustar según necesidad) */
-    background-color: rgba(26, 5, 10, 0.7); /* Color de fondo con opacidad */
-    border-radius: 5px;    
-}
+
 
 .izquierda {
     flex: 1; /* Ocupa la mitad izquierda del contenedor */
