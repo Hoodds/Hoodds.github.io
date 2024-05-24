@@ -1,24 +1,23 @@
 /* #1a050a COLOR DE FONDO DEL JPG*/
 body {
-	background-image: url("../images/fondo.jpg");
-/*	font-family:Lovecraftian;*/
+    background-image: url("../images/fondo.jpg");
     margin: 0;
     padding: 0;
     height: 100vh; /* Establece la altura del body al 100% del viewport height */
     overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
-	display: flex;
+    display: flex;
     flex-direction: column; /* Establece la dirección de los elementos hijos como columna */
-	color: #fff;
-	animation: moveBackground 200S linear infinite; /* Aplica la animación al fondo */
+    color: #fff;
+    animation: moveBackground 200s linear infinite; /* Aplica la animación al fondo */
 }
 
-header{
-	height: 22%;
+header {
+    height: 22%;
     text-align: center;
-    padding: 20px 0;
-	display: flex;
-	display-content: row;
-	font-family:Unutterable-z8E8X;
+    padding-bottom: 40px;
+    display: flex;
+    display-content: row;
+    font-family: Unutterable-z8E8X;
 }
 
 header .text-container {
@@ -26,43 +25,74 @@ header .text-container {
     flex-grow: 1; /* Permite que el contenedor de texto crezca */
 }
 
-header h1{
-	font-size: 40pt;
-	font-family: "Curse of the Zombie";
-	word-spacing: 30px;
+header h1 {
+    font-size: 40pt;
+    font-family: "Curse of the Zombie";
+    word-spacing: 30px;
 }
 
-nav{	
-	margin-left: 30px;
-	display: flex;
-	flex-direction: row;
-	
+header p {
+    font-weight: bold;
+    font-size: 15pt;
+    background-color: rgba(26, 5, 10, 0.7); /* Color de fondo con opacidad */
+    border-radius: 5px;
+    display: inline; /* Hace que el fondo solo ocupe el espacio del texto */
 }
 
-nav p{
-	margin-right: 10px;
-}
-
-main{
-	height: 62%;
-	flex: 1; /* Hace que el main ocupe todo el espacio restante vertical */
-    overflow-y: auto; /* Agrega desplazamiento vertical si es necesario */	
-}
-
-footer{
-	display:flex;
-	flex-direction: row
-	height: 16%;
+nav {
+    height: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    font-family: Unutterable-z8E8X;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    background-color: rgba(26, 5, 10, 0.7); /* Color de fondo con opacidad */
+    border-radius: 5px;
+}
+
+nav a:hover {
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+main {
+    height: 72%;
+    flex: 1; /* Hace que el main ocupe todo el espacio restante vertical */
+    overflow-y: auto; /* Agrega desplazamiento vertical si es necesario */
+    padding: 1px;
+}
+
+footer {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: row;
+    height: 6%;
+    justify-content: center;
+    font-family: Unutterable-z8E8X;
+}
+
+.qr {
+    padding-right: 5px;
+}
+
+#qrcode-small {
+    cursor: pointer;
 }
 
 .contenedorimagen {
     position: absolute;
-	top: 10px; /* Espacio desde la parte superior */
-    left: 20px; /* Espacio desde la derecha */    
-    padding: 20px;
-    width: 150px; /* Ajusta el tamaño según sea necesario */
-    height: 150px;
+    top: 10px; /* Espacio desde la parte superior */
+    left: 50px; /* Espacio desde la derecha */
+    padding: 40px;
+    width: 145px; /* Ajusta el tamaño según sea necesario */
+    height: 145px;
     overflow: hidden;
 }
 
@@ -89,22 +119,24 @@ footer{
     opacity: 1;
 }
 
-
-
-@font-face{
-	font-family: 'Lovecraftian';	src:url("../fonts/Lovecraftian/Lovecraftian.woff"),url("../fonts/Lovecraftian/Lovecraftian.ttf"),url("../fonts/Lovecraftian/Lovecraftian.eot"),url("../fonts/Lovecraftian/Lovecraftian.svg");
+#weather-temp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; /* Tamaño de fuente opcional */
 }
 
-@font-face{
-	font-family: 'Unutterable-z8E8X';
-	src:url("../fonts/Unutterable-z8E8X/Unutterable-z8E8X.woff"),url("../fonts/Unutterable-z8E8X/Unutterable-z8E8X.ttf"),url("../fonts/Unutterable-z8E8X/Unutterable-z8E8X.eot"),url("../fonts/Unutterable-z8E8X/Unutterable-z8E8X.svg");
+@font-face {
+    font-family: 'Unutterable-z8E8X';
+    src: url("../fonts/Unutterable-z8E8X/Unutterable-z8E8X.woff"), url("../fonts/Unutterable-z8E8X/Unutterable-z8E8X.ttf"), url("../fonts/Unutterable-z8E8X/Unutterable-z8E8X.eot"), url("../fonts/Unutterable-z8E8X/Unutterable-z8E8X.svg");
 }
 
-@font-face{
-	font-family: 'Curse of the Zombie';	src:url("../fonts/Curse of the Zombie/Curse of the Zombie.woff"),url("../fonts/Curse of the Zombie/Curse of the Zombie.ttf"),url("../fonts/Curse of the Zombie/Curse of the Zombie.eot"),url("../fonts/Curse of the Zombie/Curse of the Zombie.svg");
+@font-face {
+    font-family: 'Curse of the Zombie';
+    src: url("../fonts/Curse of the Zombie/Curse of the Zombie.woff"), url("../fonts/Curse of the Zombie/Curse of the Zombie.ttf"), url("../fonts/Curse of the Zombie/Curse of the Zombie.eot"), url("../fonts/Curse of the Zombie/Curse of the Zombie.svg");
 }
 
-/* Definir la animación para el movimiento de ida y vuelta del fondo*/
+/* Definir la animación para el movimiento de ida y vuelta del fondo */
 @keyframes moveBackground {
     0%, 100% {
         background-position: 0 200%; /* Posición inicial y final: izquierda */
