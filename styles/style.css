@@ -22,7 +22,7 @@ header{
 }
 
 .logo-container {
-	
+	padding-left: 20px;
     margin-right: auto; /* Empuja el contenedor de texto a la derecha */
 }
 
