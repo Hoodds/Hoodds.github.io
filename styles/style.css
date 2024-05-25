@@ -94,9 +94,6 @@ main{
     overflow-y: auto; /* Agrega desplazamiento vertical si es necesario */	
 	padding:1px;
 }
-main h4{
-	text-align: center;
-}
 
 .contenedor {
     display: flex;
@@ -105,28 +102,6 @@ main h4{
     border-radius: 5px;    
 }
 
-
-.izquierda {
-    flex: 1; /* Ocupa la mitad izquierda del contenedor */
-    display: flex;
-    flex-direction: column; /* Distribuye los elementos en columnas (arriba y abajo) */
-    margin-left: 15px;
-	font-size: 18px;
-}
-
-.derecha {
-    flex: 1; /* Ocupa la mitad derecha del contenedor */
-    border-left: 1px solid black; /* Separador visual entre la parte izquierda y derecha */
-	padding: 10px; /* Espaciado interior para separar el contenido del borde */
-	margin-right: 15px;
-	font-family:Unutterable-z8E8X;
-}
-
-.arriba, .abajo {
-    flex: 1; /* Cada parte (arriba y abajo) ocupa la mitad de la parte izquierda */
-    border-bottom: 1px solid black; /* Separador visual entre la parte arriba y abajo */
-    padding: 10px; /* Espaciado interior para separar el contenido del borde */	
-}
 
 footer{
 	padding-top: 5px;
