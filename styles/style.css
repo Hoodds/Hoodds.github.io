@@ -21,6 +21,22 @@ header{
 	font-family:Unutterable-z8E8X;
 }
 
+.logo-container {
+	
+    margin-right: auto; /* Empuja el contenedor de texto a la derecha */
+}
+
+#logo {
+    width: 210px;
+    height: 210px;
+    transition: transform 0.3s ease; /* Añade una transición suave */
+}
+
+#logo:hover {
+    content: url(../images/Logo-Imagen-Peq2.png); /* Cambia la imagen al pasar el ratón por encima */
+    transform: scale(1.1); /* Opcional: añade un ligero aumento de tamaño al pasar el ratón */
+}
+
 header .text-container {
     text-align: center;
     flex-grow: 1; /* Permite que el contenedor de texto crezca */	
@@ -121,38 +137,6 @@ footer{
 }
 
 
-.contenedorimagen {
-    position: absolute;
-	top: 10px; /* Espacio desde la parte superior */
-    left: 50px; /* Espacio desde la derecha */    
-    padding: 40px;
-    width: 145px; /* Ajusta el tamaño según sea necesario */
-    height: 145px;
-    overflow: hidden;
-}
-
-.transition-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: opacity 0.3s ease; /* Agrega una transición suave */
-}
-
-/* Oculta la segunda imagen inicialmente */
-#second-image {
-    opacity: 0;
-}
-
-/* Cambia la opacidad de la segunda imagen al pasar el cursor sobre el contenedor */
-.contenedorimagen:hover #first-image {
-    opacity: 0;
-}
-
-.contenedorimagen:hover #second-image {
-    opacity: 1;
-}
 
 #weather-temp {
 	display: flex;
