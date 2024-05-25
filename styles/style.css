@@ -56,6 +56,10 @@ header p {
     display: inline; /* Hace que el fondo solo ocupe el espacio del texto */    
 }
 
+.separador{
+	width: 210px;
+	padding-right: 20px;
+}
 
 nav{	
 	height : 3%;
