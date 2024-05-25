@@ -108,8 +108,8 @@ main h4{
 footer{
 	padding-top: 5px;
 	display:flex;
-	flex-direction: row
-	height: 6%;
+	flex-direction: row;
+	
     justify-content: center;
 	font-family:Unutterable-z8E8X;
 }
