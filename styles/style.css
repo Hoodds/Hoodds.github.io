@@ -58,7 +58,7 @@ header p {
 
 
 nav{	
-	height: 20px;
+	height : 3%;
 	padding-bottom: 10px;
 	padding-top: 10px;	
 	display: flex;
@@ -219,4 +219,116 @@ footer{
 .full-image {
   max-width: 90%;
   max-height: 90%;
+}
+
+
+
+
+/* Estilos para móviles */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    header h1 {
+        font-size: 24pt;
+    }
+    header p {
+        font-size: 12pt;
+    }
+    .contenedor {
+        flex-direction: column;
+    }
+    .izquierda, .derecha {
+        flex: none;
+        width: 100%;
+    }
+    #logo {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+    body {
+        font-size: 16px;
+    }
+    header h1 {
+        font-size: 32pt;
+    }
+    header p {
+        font-size: 14pt;
+    }
+    .contenedor {
+        flex-direction: column;
+    }
+    .izquierda, .derecha {
+        flex: none;
+        width: 100%;
+    }
+    #logo {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* Estilos para portátiles */
+@media (min-width: 901px) and (max-width: 1200px) {
+    body {
+        font-size: 18px;
+    }
+    header h1 {
+        font-size: 36pt;
+    }
+    header p {
+        font-size: 16pt;
+    }
+    .contenedor {
+        flex-direction: row;
+    }
+    .izquierda, .derecha {
+        flex: 1;
+        width: auto;
+    }
+    #logo {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Estilos para landscape */
+@media (orientation: landscape) {
+    body {
+        font-size: 20px;
+    }
+    header h1 {
+        font-size: 40pt;
+    }
+    header p {
+        font-size: 18pt;
+    }
+}
+
+/* Estilos para monitores 4:3 */
+@media (min-aspect-ratio: 4/3) {
+    body {
+        font-size: 22px;
+    }
+    header h1 {
+        font-size: 42pt;
+    }
+    header p {
+        font-size: 20pt;
+    }
+    .contenedor {
+        flex-direction: row;
+    }
+    .izquierda, .derecha {
+        flex: 1;
+        width: auto;
+    }
+    #logo {
+        width: 210px;
+        height: 210px;
+    }
 }
