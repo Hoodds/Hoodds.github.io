@@ -45,7 +45,8 @@ header .text-container {
 header h1{
 	font-size: 40pt;
 	font-family: "Curse of the Zombie";
-	word-spacing: 30px;		
+	word-spacing: 30px;	
+	margin-bottom: 0.5em;
 }
 
 header p {
@@ -53,7 +54,8 @@ header p {
     font-size: 15pt;
     background-color: rgba(26, 5, 10, 0.7); /* Color de fondo con opacidad */
     border-radius: 5px;
-    display: inline; /* Hace que el fondo solo ocupe el espacio del texto */    
+    display: inline; /* Hace que el fondo solo ocupe el espacio del texto */   
+	margin-top: 0.5em;
 }
 
 .separador{
