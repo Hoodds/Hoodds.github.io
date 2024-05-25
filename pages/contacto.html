@@ -12,7 +12,7 @@
 <body>
 <header>
 	<div class="logo-container">
-		<a href="index.html"><img id="logo" src="../images/Logo-Imagen-Peq.png" alt="Logo"></a>
+		<a href="../index.html"><img id="logo" src="../images/Logo-Imagen-Peq.png" alt="Logo"></a>
 	</div>
 	<div class="text-container">
 		<h1>EL CLUB LOVECRAFT</h1>
@@ -27,13 +27,34 @@
 	<a href="../pages/suscitas.html">&nbsp;CITAS CÉLEBRES&nbsp;</a>
 	<a href="../pages/ejercicios.html">&nbsp;EJERCICIOS&nbsp;</a>
 	<a href="../pages/quienessomos.html">&nbsp;NOSOTROS&nbsp;</a>
-	<a href="../pages/newsletter.html">&nbsp;NEWSLETTER&nbsp;</a>
+	<a href="../pages/contacto.html">&nbsp;CONTACTO&nbsp;</a>
 </nav>
 	
 <main>
 	<div class="contenedor">
-	
-	</div>
+		<form action="/submit"> <!-- -->
+            <table>
+                <tr>
+                    <td><label for="nombre">Nombre:</label></td>
+                    <td><input type="text" id="nombre" name="nombre" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="telefono">Telefono:</label></td>
+                    <td><input type="tel" id="telefono" name="telefono" required></td>
+                </tr>
+                <tr>
+                    <td><label for="mensaje">Mensaje:</label></td>
+                    <td><textarea id="mensaje" name="mensaje" cols="60" rows="5" style="resize: none;" required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><button type="submit">ENVIAR</button></td>
+                </tr>
+            </table>
+        </form>
 </main>
 
 <footer>

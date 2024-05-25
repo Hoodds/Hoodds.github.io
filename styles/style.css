@@ -95,12 +95,57 @@ main{
 	padding:1px;
 }
 
+
 .contenedor {
     display: flex;
-    height: 100%; /* Altura del div contenedor (ajustar según necesidad) */
-    background-color: rgba(26, 5, 10, 0.7); /*  Color de fondo con opacidad */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+	background-color: rgba(26, 5, 10, 0.7); /*  Color de fondo con opacidad */
     border-radius: 5px;    
 }
+
+table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    background-color: rgba(26, 5, 10, 0.7); /* Fondo con opacidad */
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+td {
+    padding: 10px;
+    vertical-align: middle;
+    font-family: 'Unutterable-z8E8X';
+    font-size: 16px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-family: 'Unutterable-z8E8X';
+    background-color: rgba(26, 5, 10, 0.7); /* Fondo con opacidad */
+    color: #fff;
+}
+
+button {
+    width: auto;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(26, 5, 10, 0.9); /* Fondo con más opacidad al pasar el ratón */
+}
+
 
 
 footer{
