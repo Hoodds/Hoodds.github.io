@@ -222,9 +222,8 @@ footer{
 }
 
 
-
 /* Estilos para móviles */
-@media (max-width: 600px) {
+@media (max-width:480px){
     body {
         font-size: 14px;
     }
@@ -248,7 +247,7 @@ footer{
 }
 
 /* Estilos para tablets */
-@media (min-width: 601px) and (max-width: 900px) {
+@media (min-width:481px) and (max-width:768px){
     body {
         font-size: 16px;
     }
@@ -272,7 +271,7 @@ footer{
 }
 
 /* Estilos para portátiles */
-@media (min-width: 901px) and (max-width: 1200px) {
+@media (min-width:769px) {
     body {
         font-size: 18px;
     }
@@ -280,7 +279,7 @@ footer{
         font-size: 36pt;
     }
     header p {
-        font-size: 16pt;
+        font-size: 2zpt;
     }
     .contenedor {
         flex-direction: row;
@@ -295,39 +294,26 @@ footer{
     }
 }
 
-/* Estilos para pantallas grandes */
-@media (min-width: 1201px) {
+/* Estilos para landscape en dispositivos pequeños */
+@media (max-width: 768px) and (orientation: landscape) {
     body {
-        font-size: 20px;
+        font-size: 16px;
     }
     header h1 {
-        font-size: 42pt;
+        font-size: 30pt;
     }
     header p {
-        font-size: 18pt;
+        font-size: 14pt;
     }
     .contenedor {
-        flex-direction: row;
+        flex-direction: column;
     }
     .izquierda, .derecha {
-        flex: 1;
-        width: auto;
+        flex: none;
+        width: 100%;
     }
     #logo {
-        width: 220px;
-        height: 220px;
-    }
-}
-
-/* Estilos para landscape */
-@media (orientation: landscape) {
-    body {
-        font-size: 20px;
-    }
-    header h1 {
-        font-size: 40pt;
-    }
-    header p {
-        font-size: 18pt;
+        width: 180px;
+        height: 180px;
     }
 }
