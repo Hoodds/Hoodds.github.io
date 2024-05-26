@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Ejercicio 15 Mapa Euskadi</title>
+</head>
+
+<body>
+	<h2><center><font color="blue">VISITE EUSKADI</font></center></h2>
+	
+		<!-- 
+		Comentario del MapEdit: hay que cambiar las rutas a rutas relativas, tanto de la imagen como de las paginas.
+		HTML fragment showing only the elements
+		relevant to your imagemap: img, map, area, and
+		/map. Copy and paste the entire map.../map block
+		into the body of your page. Copy and paste the provided
+		img element, OR set a usemap attribute as shown on your own
+		img element.
+		-->
+
+	<p><center><img src="imagenes/mapaEuskadi.png" usemap="#mapaEuskadi" alt="" style="border-style:none" /></center></p>
+
+	<map id="mapaEuskadi" name="mapaEuskadi">
+		<area shape="poly" alt="Bizkaia" coords="13,63,25,64,38,70,49,57,77,69,69,56,69,50,74,43,89,39,96,40,106,46,115,46,131,53,143,54,148,57,149,63,142,68,137,76,137,95,132,98,128,107,116,105,114,113,107,119,81,102,73,88,55,88,48,93,41,90,38,83,29,84,13,90,3,92,3,81" href="paginas/Bizkaia.html" title="Bizkaia" />
+		<area shape="poly" alt="Gipuzkoa" coords="150,63,154,60,162,60,171,64,214,49,220,42,228,43,234,47,229,52,231,63,218,70,213,77,205,99,197,99,191,102,192,109,187,119,181,121,176,127,169,128,161,122,153,122,146,116,130,116,128,107,133,97,138,93,138,77,143,68,153,60,153,60,155,60,163,61,154,60,154,60,154,60,154,60" href="paginas/Gipuzkoa.html" title="Gipuzkoa" />
+		<area shape="poly" alt="Araba" coords="49,93,57,88,73,89,81,103,107,120,115,112,117,105,129,108,130,117,146,117,155,123,162,122,169,129,170,149,167,157,161,157,161,166,167,170,166,176,163,178,159,173,149,174,145,182,146,185,155,196,150,202,151,208,142,205,127,212,118,208,113,201,113,195,106,192,104,203,97,195,89,178,75,167,67,167,61,160,61,150,51,151,47,153,42,146,49,140,67,140,70,132,78,128,73,120,63,118,54,119,47,105" href="paginas/Araba.html" title="Araba" />
+		<area shape="default" nohref="nohref" alt="" />
+	</map>
+		
+	</br>
+	<p>Para acceder directamente a una provincia:</p>
+	<ol>
+		<li>Pulse encima del mapa, en la zona correspondiente a la provincia requerida.</li>
+		<p></p>
+		<li>Elija una de las opciones de la siguiente lista:
+			<ol>
+				<li><a href="https://www.bizkaia.eus/es/" target="_blank">Bizkaia</a></li>
+				<li><a href="https://www.gipuzkoa.eus/es/" target="_blank">Gipuzkoa</a></li>
+				<li><a href="https://web.araba.eus/es/" target="_blank">Araba</a></li>
+			</ol>
+		</li>
+	</ol>
+</body>
+</html>
