@@ -95,18 +95,14 @@ main{
 	padding:1px;
 }
 
-main img{
-	width: 190px;
-	height: 190px;
-}
 
-.main-content {
+.contenedor {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    min-height: 80vh; /* Ajusta según sea necesario */
-	
+    align-items: center;
+    height: 100%;
+	background-color: rgba(26, 5, 10, 0.7); /*  Color de fondo con opacidad */
+    border-radius: 5px;    
 }
 
 .tabs {
@@ -134,15 +130,7 @@ main img{
     text-align: center;
 }
 
-#tab1{	
-	display: -webkit -flex;
-	display: -moz -flex;
-	display: flex;
-	flex-direction: row;
-}
-
-#tab2{	
-	display: none;
+#tab1, #tab2{	
 	display: -webkit -flex;
 	display: -moz -flex;
 	display: flex;
@@ -152,6 +140,7 @@ main img{
 #d1, #d2, #d3, #d4{
 	width: 25%;
 }
+
 
 footer{
 	padding-top: 5px;
@@ -252,6 +241,7 @@ footer{
   max-width: 90%;
   max-height: 90%;
 }
+
 
 /* Estilos para móviles */
 @media (max-width:480px){

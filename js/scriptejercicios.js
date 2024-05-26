@@ -1,3 +1,480 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const qrcodeSmall = document.getElementById('qrcode-small');
+    const qrcodeOverlay = document.getElementById('qrcode-overlay');
+    const qrcodeCloseBtn = document.getElementById('qrcode-close-btn');
+
+qrcodeSmall.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'block';
+});
+
+qrcodeCloseBtn.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'none';
+});
+
+
+  thumbnails.querySelectorAll('img').forEach((thumbnail) => {
+    thumbnail.addEventListener('click', () => {
+      openFullImage(thumbnail.src, thumbnail.alt);
+    });
+  });
+
+  function openFullImage(src, alt) {
+    fullImage.src = src;
+    fullImage.alt = alt;
+    fullImageOverlay.style.display = 'block';
+  }
+
+  closeBtn.addEventListener('click', () => {
+    fullImageOverlay.style.display = 'none';
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const qrcodeSmall = document.getElementById('qrcode-small');
+    const qrcodeOverlay = document.getElementById('qrcode-overlay');
+    const qrcodeCloseBtn = document.getElementById('qrcode-close-btn');
+
+qrcodeSmall.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'block';
+});
+
+qrcodeCloseBtn.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'none';
+});
+
+
+  thumbnails.querySelectorAll('img').forEach((thumbnail) => {
+    thumbnail.addEventListener('click', () => {
+      openFullImage(thumbnail.src, thumbnail.alt);
+    });
+  });
+
+  function openFullImage(src, alt) {
+    fullImage.src = src;
+    fullImage.alt = alt;
+    fullImageOverlay.style.display = 'block';
+  }
+
+  closeBtn.addEventListener('click', () => {
+    fullImageOverlay.style.display = 'none';
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const qrcodeSmall = document.getElementById('qrcode-small');
+    const qrcodeOverlay = document.getElementById('qrcode-overlay');
+    const qrcodeCloseBtn = document.getElementById('qrcode-close-btn');
+
+qrcodeSmall.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'block';
+});
+
+qrcodeCloseBtn.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'none';
+});
+
+
+  thumbnails.querySelectorAll('img').forEach((thumbnail) => {
+    thumbnail.addEventListener('click', () => {
+      openFullImage(thumbnail.src, thumbnail.alt);
+    });
+  });
+
+  function openFullImage(src, alt) {
+    fullImage.src = src;
+    fullImage.alt = alt;
+    fullImageOverlay.style.display = 'block';
+  }
+
+  closeBtn.addEventListener('click', () => {
+    fullImageOverlay.style.display = 'none';
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const qrcodeSmall = document.getElementById('qrcode-small');
+    const qrcodeOverlay = document.getElementById('qrcode-overlay');
+    const qrcodeCloseBtn = document.getElementById('qrcode-close-btn');
+
+qrcodeSmall.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'block';
+});
+
+qrcodeCloseBtn.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'none';
+});
+
+
+  thumbnails.querySelectorAll('img').forEach((thumbnail) => {
+    thumbnail.addEventListener('click', () => {
+      openFullImage(thumbnail.src, thumbnail.alt);
+    });
+  });
+
+  function openFullImage(src, alt) {
+    fullImage.src = src;
+    fullImage.alt = alt;
+    fullImageOverlay.style.display = 'block';
+  }
+
+  closeBtn.addEventListener('click', () => {
+    fullImageOverlay.style.display = 'none';
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const qrcodeSmall = document.getElementById('qrcode-small');
+    const qrcodeOverlay = document.getElementById('qrcode-overlay');
+    const qrcodeCloseBtn = document.getElementById('qrcode-close-btn');
+
+qrcodeSmall.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'block';
+});
+
+qrcodeCloseBtn.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'none';
+});
+
+
+  thumbnails.querySelectorAll('img').forEach((thumbnail) => {
+    thumbnail.addEventListener('click', () => {
+      openFullImage(thumbnail.src, thumbnail.alt);
+    });
+  });
+
+  function openFullImage(src, alt) {
+    fullImage.src = src;
+    fullImage.alt = alt;
+    fullImageOverlay.style.display = 'block';
+  }
+
+  closeBtn.addEventListener('click', () => {
+    fullImageOverlay.style.display = 'none';
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const qrcodeSmall = document.getElementById('qrcode-small');
+    const qrcodeOverlay = document.getElementById('qrcode-overlay');
+    const qrcodeCloseBtn = document.getElementById('qrcode-close-btn');
+
+qrcodeSmall.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'block';
+});
+
+qrcodeCloseBtn.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'none';
+});
+
+
+  thumbnails.querySelectorAll('img').forEach((thumbnail) => {
+    thumbnail.addEventListener('click', () => {
+      openFullImage(thumbnail.src, thumbnail.alt);
+    });
+  });
+
+  function openFullImage(src, alt) {
+    fullImage.src = src;
+    fullImage.alt = alt;
+    fullImageOverlay.style.display = 'block';
+  }
+
+  closeBtn.addEventListener('click', () => {
+    fullImageOverlay.style.display = 'none';
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const qrcodeSmall = document.getElementById('qrcode-small');
+    const qrcodeOverlay = document.getElementById('qrcode-overlay');
+    const qrcodeCloseBtn = document.getElementById('qrcode-close-btn');
+
+qrcodeSmall.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'block';
+});
+
+qrcodeCloseBtn.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'none';
+});
+
+
+  thumbnails.querySelectorAll('img').forEach((thumbnail) => {
+    thumbnail.addEventListener('click', () => {
+      openFullImage(thumbnail.src, thumbnail.alt);
+    });
+  });
+
+  function openFullImage(src, alt) {
+    fullImage.src = src;
+    fullImage.alt = alt;
+    fullImageOverlay.style.display = 'block';
+  }
+
+  closeBtn.addEventListener('click', () => {
+    fullImageOverlay.style.display = 'none';
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const qrcodeSmall = document.getElementById('qrcode-small');
+    const qrcodeOverlay = document.getElementById('qrcode-overlay');
+    const qrcodeCloseBtn = document.getElementById('qrcode-close-btn');
+
+qrcodeSmall.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'block';
+});
+
+qrcodeCloseBtn.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'none';
+});
+
+
+  thumbnails.querySelectorAll('img').forEach((thumbnail) => {
+    thumbnail.addEventListener('click', () => {
+      openFullImage(thumbnail.src, thumbnail.alt);
+    });
+  });
+
+  function openFullImage(src, alt) {
+    fullImage.src = src;
+    fullImage.alt = alt;
+    fullImageOverlay.style.display = 'block';
+  }
+
+  closeBtn.addEventListener('click', () => {
+    fullImageOverlay.style.display = 'none';
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const qrcodeSmall = document.getElementById('qrcode-small');
+    const qrcodeOverlay = document.getElementById('qrcode-overlay');
+    const qrcodeCloseBtn = document.getElementById('qrcode-close-btn');
+
+qrcodeSmall.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'block';
+});
+
+qrcodeCloseBtn.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'none';
+});
+
+
+  thumbnails.querySelectorAll('img').forEach((thumbnail) => {
+    thumbnail.addEventListener('click', () => {
+      openFullImage(thumbnail.src, thumbnail.alt);
+    });
+  });
+
+  function openFullImage(src, alt) {
+    fullImage.src = src;
+    fullImage.alt = alt;
+    fullImageOverlay.style.display = 'block';
+  }
+
+  closeBtn.addEventListener('click', () => {
+    fullImageOverlay.style.display = 'none';
+  });
+});document.addEventListener('DOMContentLoaded', () => {
+    const qrcodeSmall = document.getElementById('qrcode-small');
+    const qrcodeOverlay = document.getElementById('qrcode-overlay');
+    const qrcodeCloseBtn = document.getElementById('qrcode-close-btn');
+
+qrcodeSmall.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'block';
+});
+
+qrcodeCloseBtn.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'none';
+});
+
+
+  thumbnails.querySelectorAll('img').forEach((thumbnail) => {
+    thumbnail.addEventListener('click', () => {
+      openFullImage(thumbnail.src, thumbnail.alt);
+    });
+  });
+
+  function openFullImage(src, alt) {
+    fullImage.src = src;
+    fullImage.alt = alt;
+    fullImageOverlay.style.display = 'block';
+  }
+
+  closeBtn.addEventListener('click', () => {
+    fullImageOverlay.style.display = 'none';
+  });
+});document.addEventListener('DOMContentLoaded', () => {
+    const qrcodeSmall = document.getElementById('qrcode-small');
+    const qrcodeOverlay = document.getElementById('qrcode-overlay');
+    const qrcodeCloseBtn = document.getElementById('qrcode-close-btn');
+
+qrcodeSmall.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'block';
+});
+
+qrcodeCloseBtn.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'none';
+});
+
+
+  thumbnails.querySelectorAll('img').forEach((thumbnail) => {
+    thumbnail.addEventListener('click', () => {
+      openFullImage(thumbnail.src, thumbnail.alt);
+    });
+  });
+
+  function openFullImage(src, alt) {
+    fullImage.src = src;
+    fullImage.alt = alt;
+    fullImageOverlay.style.display = 'block';
+  }
+
+  closeBtn.addEventListener('click', () => {
+    fullImageOverlay.style.display = 'none';
+  });
+});document.addEventListener('DOMContentLoaded', () => {
+    const qrcodeSmall = document.getElementById('qrcode-small');
+    const qrcodeOverlay = document.getElementById('qrcode-overlay');
+    const qrcodeCloseBtn = document.getElementById('qrcode-close-btn');
+
+qrcodeSmall.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'block';
+});
+
+qrcodeCloseBtn.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'none';
+});
+
+
+  thumbnails.querySelectorAll('img').forEach((thumbnail) => {
+    thumbnail.addEventListener('click', () => {
+      openFullImage(thumbnail.src, thumbnail.alt);
+    });
+  });
+
+  function openFullImage(src, alt) {
+    fullImage.src = src;
+    fullImage.alt = alt;
+    fullImageOverlay.style.display = 'block';
+  }
+
+  closeBtn.addEventListener('click', () => {
+    fullImageOverlay.style.display = 'none';
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const qrcodeSmall = document.getElementById('qrcode-small');
+    const qrcodeOverlay = document.getElementById('qrcode-overlay');
+    const qrcodeCloseBtn = document.getElementById('qrcode-close-btn');
+
+qrcodeSmall.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'block';
+});
+
+qrcodeCloseBtn.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'none';
+});
+
+
+  thumbnails.querySelectorAll('img').forEach((thumbnail) => {
+    thumbnail.addEventListener('click', () => {
+      openFullImage(thumbnail.src, thumbnail.alt);
+    });
+  });
+
+  function openFullImage(src, alt) {
+    fullImage.src = src;
+    fullImage.alt = alt;
+    fullImageOverlay.style.display = 'block';
+  }
+
+  closeBtn.addEventListener('click', () => {
+    fullImageOverlay.style.display = 'none';
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const qrcodeSmall = document.getElementById('qrcode-small');
+    const qrcodeOverlay = document.getElementById('qrcode-overlay');
+    const qrcodeCloseBtn = document.getElementById('qrcode-close-btn');
+
+qrcodeSmall.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'block';
+});
+
+qrcodeCloseBtn.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'none';
+});
+
+
+  thumbnails.querySelectorAll('img').forEach((thumbnail) => {
+    thumbnail.addEventListener('click', () => {
+      openFullImage(thumbnail.src, thumbnail.alt);
+    });
+  });
+
+  function openFullImage(src, alt) {
+    fullImage.src = src;
+    fullImage.alt = alt;
+    fullImageOverlay.style.display = 'block';
+  }
+
+  closeBtn.addEventListener('click', () => {
+    fullImageOverlay.style.display = 'none';
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const qrcodeSmall = document.getElementById('qrcode-small');
+    const qrcodeOverlay = document.getElementById('qrcode-overlay');
+    const qrcodeCloseBtn = document.getElementById('qrcode-close-btn');
+
+qrcodeSmall.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'block';
+});
+
+qrcodeCloseBtn.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'none';
+});
+
+
+  thumbnails.querySelectorAll('img').forEach((thumbnail) => {
+    thumbnail.addEventListener('click', () => {
+      openFullImage(thumbnail.src, thumbnail.alt);
+    });
+  });
+
+  function openFullImage(src, alt) {
+    fullImage.src = src;
+    fullImage.alt = alt;
+    fullImageOverlay.style.display = 'block';
+  }
+
+  closeBtn.addEventListener('click', () => {
+    fullImageOverlay.style.display = 'none';
+  });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const qrcodeSmall = document.getElementById('qrcode-small');
+    const qrcodeOverlay = document.getElementById('qrcode-overlay');
+    const qrcodeCloseBtn = document.getElementById('qrcode-close-btn');
+
+qrcodeSmall.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'block';
+});
+
+qrcodeCloseBtn.addEventListener('click', () => {
+    qrcodeOverlay.style.display = 'none';
+});
+
+
+  thumbnails.querySelectorAll('img').forEach((thumbnail) => {
+    thumbnail.addEventListener('click', () => {
+      openFullImage(thumbnail.src, thumbnail.alt);
+    });
+  });
+
+  function openFullImage(src, alt) {
+    fullImage.src = src;
+    fullImage.alt = alt;
+    fullImageOverlay.style.display = 'block';
+  }
+
+  closeBtn.addEventListener('click', () => {
+    fullImageOverlay.style.display = 'none';
+  });
+});
 // Función para abrir una pestaña específica
 function openTab(tabName) {
 	// Obtenemos todos los elementos con clase 'tabcontent' y los ocultamos
@@ -18,3 +495,16 @@ function openTab(tabName) {
 
 openTab('tab1'); // Abre la primera pestaña por defecto al cargar la página
 
+/*document.addEventListener('DOMContentLoaded', function() {
+        // Selecciona el elemento donde se mostrará la fecha y hora
+        var currentDateTimeElement = document.getElementById('currentDateTime');
+
+        // Actualiza la fecha y hora cada segundo
+        setInterval(function() {
+            // Obtiene la fecha y hora actual utilizando Day.js
+            var currentDateTime = dayjs().format('YYYY-MM-DD HH:mm:ss');
+
+            // Actualiza el contenido del elemento con la fecha y hora actual
+            currentDateTimeElement.textContent = 'Fecha y Hora: ' + currentDateTime;
+        }, 1000); // Actualiza cada segundo
+    });*/
