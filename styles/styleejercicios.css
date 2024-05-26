@@ -63,6 +63,10 @@ header p {
 	width: 210px;
 	padding-right: 20px;
 }
+.audio{
+	padding-right: 20px;
+	padding-top: 40px;
+}
 
 nav{	
 	height : 3%;
