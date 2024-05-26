@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Documento sin título</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    
+</head>
+
+<body>
+    <div id="contenedortotal">
+        <header id="cabecera">
+            <h1>BOUQUET DE FLORES</h1>
+            <hr>
+        </header>
+        <article id="tabla">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><img src="images/bouquet1.jpg" id="i1" data-large="images/grandes/bouquet1.jpg"/></td>
+                        <td><img src="images/bouquet2.jpg" id="i2" data-large="images/grandes/bouquet2.jpg"/></td>
+                        <td><img src="images/bouquet3.jpg" id="i3" data-large="images/grandes/bouquet3.jpg"/></td>
+                        <td><img src="images/bouquet4.jpg" id="i4" data-large="images/grandes/bouquet4.jpg"/></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/bouquet5.jpg" id="i5" data-large="images/grandes/bouquet5.jpg"/></td>
+                        <td colspan="2" rowspan="2">
+                            <img src="images/grandes/bouquet0.jpg" alt="centro" width="200" height="200" id="centro" data-large="images/grandes/bouquet0.jpg"/>
+                        </td>
+                        <td><img src="images/bouquet6.jpg" id="i6" data-large="images/grandes/bouquet6.jpg"/></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/bouquet7.jpg" id="i7" data-large="images/grandes/bouquet7.jpg"/></td>
+                        <td><img src="images/bouquet8.jpg" id="i8" data-large="images/grandes/bouquet8.jpg"/></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/bouquet9.jpg" id="i9" data-large="images/grandes/bouquet9.jpg"/></td>
+                        <td><img src="images/bouquet10.jpg" id="i10" data-large="images/grandes/bouquet10.jpg"/></td>
+                        <td><img src="images/bouquet11.jpg" id="i11" data-large="images/grandes/bouquet11.jpg"/></td>
+                        <td><img src="images/bouquet12.jpg" id="i12" data-large="images/grandes/bouquet12.jpg"/></td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('#tabla img');
+            const centroImage = document.getElementById('centro');
+
+            images.forEach(img => {
+                img.addEventListener('mouseover', function() {
+                    centroImage.src = img.getAttribute('data-large');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+<!--
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="styles/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('images/grandes/bouquet1.jpg','images/grandes/bouquet2.jpg','images/grandes/bouquet3.jpg','images/grandes/bouquet4.jpg','images/grandes/bouquet5.jpg','images/grandes/bouquet6.jpg','images/grandes/bouquet7.jpg','images/grandes/bouquet8.jpg','images/grandes/bouquet9.jpg','images/grandes/bouquet10.jpg','images/grandes/bouquet11.jpg','images/grandes/bouquet12.jpg')">
+	<div id="contenedortotal">
+		<header id="cabecera">
+          <h1>BOUQUET DE FLORES</h1>
+			<hr>
+		</header>
+		<article id="tabla">
+            <table onfocus="MM_preloadImages('images/grandes/bouquet1.jpg','images/grandes/bouquet2.jpg','images/grandes/bouquet3.jpg','images/grandes/bouquet4.jpg','images/grandes/bouquet5.jpg','images/grandes/bouquet6.jpg','images/grandes/bouquet7.jpg','images/grandes/bouquet8.jpg','images/grandes/bouquet9.jpg','images/grandes/bouquet10.jpg','images/grandes/bouquet11.jpg','images/grandes/bouquet12.jpg')">
+            <tbody>
+            <tr>
+                <td><img src="images/bouquet1.jpg" width="99" height="99" id="i1"/></td>
+                <td><img src="images/bouquet2.jpg" width="99" height="99" id="i2"/></td>
+                <td><img src="images/bouquet3.jpg" width="99" height="99" id="i3"/></td>
+                <td><img src="images/bouquet4.jpg" width="99" height="99" id="i4"/></td>
+            </tr>
+                <tr>
+                <td><img src="images/bouquet5.jpg" width="99" height="99" id="i5"/></td>
+                <td colspan="2" rowspan="2"><img src="images/grandes/bouquet0.jpg" alt="centro" width="206" height="200" onMouseOver="MM_swapImage('i1','','images/grandes/bouquet1.jpg','i2','','images/grandes/bouquet2.jpg','i3','','images/grandes/bouquet3.jpg','i4','','images/grandes/bouquet4.jpg','i5','','images/grandes/bouquet5.jpg','i6','','images/grandes/bouquet6.jpg','i7','','images/grandes/bouquet7.jpg','i8','','images/grandes/bouquet8.jpg','i9','','images/grandes/bouquet9.jpg','i10','','images/grandes/bouquet10.jpg','i11','','images/grandes/bouquet11.jpg','i12','','images/grandes/bouquet12.jpg',1)"/></td>
+                <td><img src="images/bouquet6.jpg" width="99" height="99" id="i6"/></td>
+            </tr>
+            <tr>
+                <td><img src="images/bouquet7.jpg" width="100" height="99" id="i7"/></td>
+                <td><img src="images/bouquet8.jpg" width="99" height="99" id="i8"/></td>
+            </tr>
+            <tr>
+                <td><img src="images/bouquet9.jpg" width="100" height="99" id="i9"/></td>
+                <td><img src="images/bouquet10.jpg" width="99" height="99" id="i10"/></td>
+                <td><img src="images/bouquet11.jpg" width="99" height="99" id="i11"/></td>
+                <td><img src="images/bouquet12.jpg" width="99" height="99" id="i12"/></td>
+            </tr>
+            </tbody>
+            </table>
+	  </article>
+</div>
+</body>
+</html>
+-->
