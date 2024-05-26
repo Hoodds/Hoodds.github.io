@@ -1,13 +1,43 @@
 <html>
 <head>
 	<title>PARTIDOS POLITICOS</title>
+	<style>
+		.contenedorboton {
+			text-align: center;
+		}
+		.volver-boton {
+			background-color: #1a050a;
+			border: none;
+			color: white;
+			padding: 15px 30px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 12px;
+			box-shadow: 0 4px #999;
+			transition: all 0.3s ease;
+		}
+		.volver-boton:hover {
+			background-color:#5C1123;
+			box-shadow: 0 6px #666;
+			transform: translateY(-2px);
+		}
+		.volver-boton:active {
+			background-color: #1a050a;
+			box-shadow: 0 2px #666;
+			transform: translateY(2px);
+		}
+	</style>
 </head>
 
 <body>
 	<h1><center><b>ELECCIONES GENERALES</b></center></h1>
 	<hr>
 	</br>
-	<center><img src="imagenes/partidosMosaico.jpg" usemap="#partidosMosaico" alt="" style="border-style:none" /></center>
+	<center><img src="../../images/ejercicios/elecciones/partidosMosaico.jpg" usemap="#partidosMosaico" alt="" style="border-style:none" /></center>
 
 	<map id="partidosMosaico" name="partidosMosaico">
 		<area shape="rect" alt="ERC" coords="61,57,93,81" href="https://www.esquerra.cat/ca" title="ERC" target="_blank" />
@@ -17,16 +47,19 @@
 		<area shape="rect" alt="Mas Pais" coords="206,57,238,82" href="https://maspais.es/" title="Mas Pais" target="_blank" />
 		<area shape="default" nohref="nohref" alt="" />
 	</map>
+	<p><center>La segunda fila son enlaces</center></p>
 	</br>
 	</br>
 
 	PARTIDOS MAS VOTADOS
 	<ul>
-		<li><a href="paginas/masvotados.html">PP</a></li>
-		<li><a href="paginas/masvotados.html">PSOE</a></li>
-		<li><a href="paginas/masvotados.html">Vox</a></li>
-		<li><a href="paginas/masvotados.html">SUMAR</a></li>
+		<li><a href="otras/masvotados.html">PP</a></li>
+		<li><a href="otras/masvotados.html">PSOE</a></li>
+		<li><a href="otras/masvotados.html">Vox</a></li>
+		<li><a href="otras/masvotados.html">SUMAR</a></li>
 	</ul>
-	
+	<div class="contenedorboton">
+		<a href="../ejercicios.html" class="volver-boton">VOLVER</a>
+	</div>	
 </body>
 </html>
