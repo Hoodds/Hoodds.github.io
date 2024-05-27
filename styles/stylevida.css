@@ -105,10 +105,14 @@ main{
 	background-color: rgba(26, 5, 10, 0.7); /*  Color de fondo con opacidad */
     border-radius: 5px;    
 }
+figcaption{
+	font-size: 14px;
+}
 
 
 
 footer{
+	
 	padding-top: 5px;
 	display:flex;
 	flex-direction: row;
