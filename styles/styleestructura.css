@@ -213,93 +213,61 @@ footer{
     body {
         font-size: 14px;
     }
+	
     header h1 {
-        font-size: 24pt;
+        font-size: 18pt;
     }
     header p {
-        font-size: 12pt;
+        font-size: 10pt;
     }
-    .contenedor {
-        flex-direction: column;
-    }
-    .izquierda, .derecha {
-        flex: none;
-        width: 100%;
-    }
+    
+	
     #logo {
         width: 150px;
         height: 150px;
     }
+	
 }
+
 
 /* Estilos para tablets */
 @media (min-width:481px) and (max-width:768px){
     body {
-        font-size: 16px;
+        font-size: 14px;
     }
+	
     header h1 {
-        font-size: 32pt;
+        font-size: 18pt;
     }
     header p {
-        font-size: 14pt;
+        font-size: 10pt;
     }
-    .contenedor {
-        flex-direction: column;
-    }
-    .izquierda, .derecha {
-        flex: none;
-        width: 100%;
-    }
+    
+	
     #logo {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
     }
+	
 }
 
 /* Estilos para portátiles */
-@media (min-width:769px) {
+@media (min-width:769px) and (max-width:1024px) {
     body {
-        font-size: 18px;
+        font-size: 14px;
     }
+	
     header h1 {
-        font-size: 36pt;
+        font-size: 18pt;
     }
     header p {
-        font-size: 2zpt;
+        font-size: 10pt;
     }
-    .contenedor {
-        flex-direction: row;
-    }
-    .izquierda, .derecha {
-        flex: 1;
-        width: auto;
-    }
+    
+	
     #logo {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
-}
-
-/* Estilos para landscape en dispositivos pequeños */
-@media (max-width: 768px) and (orientation: landscape) {
-    body {
-        font-size: 16px;
-    }
-    header h1 {
-        font-size: 30pt;
-    }
-    header p {
-        font-size: 14pt;
-    }
-    .contenedor {
-        flex-direction: column;
-    }
-    .izquierda, .derecha {
-        flex: none;
-        width: 100%;
-    }
-    #logo {
-        width: 180px;
-        height: 180px;
-    }
+	
 }
