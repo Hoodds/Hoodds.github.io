@@ -99,17 +99,6 @@ main{
 	padding:1px;
 }
 
-
-.contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-	background-color: rgba(26, 5, 10, 0.7); /*  Color de fondo con opacidad */
-    border-radius: 5px;    
-}
-
-
 .tablink {
     background-color: #E6E6FA;
     border: 1px solid #CAC9ED;
@@ -134,9 +123,9 @@ main{
     text-align: left;
 	background-color: #E6E6FA;
 	color:#000000;
-	width: 100%;
-	
+	width: 100%;	
 	padding-left: 6%;
+	
 
 }
 .tabcontent p{
@@ -152,6 +141,7 @@ main{
 	display: -moz -flex;
 	display: flex;
 	flex-direction: row;
+	
 }
 
 #d1, #d2, #d3, #d4{
@@ -203,32 +193,6 @@ footer{
         background-position: 100% 0; /* Posición en el medio: derecha */
     }
 }
-.gallery-container {
-  margin-top: 20px;
-  position: relative;
-}
-
-.thumbnails-container {
-  overflow: hidden;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.thumbnails {
-  display: flex;
-  transition: transform 0.3s ease;
-}
-
-.thumbnails img {
-  width: 100px;
-  height: 100px;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-
-
 .full-image-overlay {
   display: none;
   position: fixed;
@@ -262,24 +226,37 @@ footer{
 }
 
 
-/* Estilos para móviles */
 @media (max-width:480px){
     body {
         font-size: 14px;
     }
+	
     header h1 {
-        font-size: 24pt;
+        font-size: 18pt;
     }
     header p {
-        font-size: 12pt;
+        font-size: 10pt;
     }
-    .contenedor {
-        flex-direction: column;
-    }
-    .izquierda, .derecha {
-        flex: none;
-        width: 100%;
-    }
+    .close-btn {
+  		position: absolute;
+  		top: -10px;
+  		right: 6px;  		
+	}
+	
+	.tabcontent{
+		display: flex;
+		flex-direction: column;
+		
+		
+	}
+	#tab1, #tab2{	
+		display: -webkit -flex;
+		display: -moz -flex;
+		display: flex;
+		flex-direction: column;
+		
+	}
+	
     #logo {
         width: 150px;
         height: 150px;
@@ -289,24 +266,36 @@ footer{
 /* Estilos para tablets */
 @media (min-width:481px) and (max-width:768px){
     body {
-        font-size: 16px;
+        font-size: 14px;
     }
+	
     header h1 {
-        font-size: 32pt;
+        font-size: 18pt;
     }
     header p {
-        font-size: 14pt;
+        font-size: 10pt;
     }
-    .contenedor {
-        flex-direction: column;
-    }
-    .izquierda, .derecha {
-        flex: none;
-        width: 100%;
-    }
+    .close-btn {
+  		position: absolute;
+  		top: -10px;
+  		right: 6px;  		
+	}
+	
+	.tabcontent{
+		display: flex;
+		flex-direction: column;
+		
+	}
+	#tab1, #tab2{	
+		display: -webkit -flex;
+		display: -moz -flex;
+		display: flex;
+		flex-direction: column;
+	}
+	
     #logo {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
     }
 }
 
@@ -325,7 +314,7 @@ footer{
         flex-direction: row;
     }
     .izquierda, .derecha {
-        flex: 1;
+        flex-direction: column;
         width: auto;
     }
     #logo {

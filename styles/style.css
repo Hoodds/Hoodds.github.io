@@ -1,4 +1,5 @@
 /* #1a050a COLOR DE FONDO DEL JPG*/
+
 body {
 	background-image: url("../images/fondo.jpg");
 	
@@ -6,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh; /* Establece la altura del body al 100% del viewport height */
-    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+    
 	display: flex;
     flex-direction: column; /* Establece la dirección de los elementos hijos como columna */
 	color: #fff;
@@ -96,15 +97,17 @@ main{
 	padding:1px;
 }
 
-
 .contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-	background-color: rgba(26, 5, 10, 0.7); /*  Color de fondo con opacidad */
-    border-radius: 5px;    
+    background-color: rgba(26, 5, 10, 0.7); /* Color de fondo con opacidad */
+    border-radius: 5px;
+    width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho */
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
 }
+
 
 main h4{
 	text-align: center;
@@ -117,6 +120,7 @@ main h4{
     flex-direction: column; /* Distribuye los elementos en columnas (arriba y abajo) */
     margin-left: 15px;
 	font-size: 18px;
+	box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
 }
 
 .derecha {
@@ -125,12 +129,27 @@ main h4{
 	padding: 10px; /* Espaciado interior para separar el contenido del borde */
 	margin-right: 15px;
 	font-family:Unutterable-z8E8X;
+	box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
 }
 
 .arriba, .abajo {
     
     border-bottom: 1px solid black; /* Separador visual entre la parte arriba y abajo */
     padding: 10px; /* Espaciado interior para separar el contenido del borde */	
+}
+.firma {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Asegúrate de que el contenedor tenga un ancho definido si es necesario */
+    height: 100%; /* Asegúrate de que el contenedor tenga una altura definida si es necesario */
+    text-align: center; /* Asegúrate de que el texto esté centrado */
+}
+.firma img {
+    
+    height: auto;
+	border-radius: 50%; /* Ajusta este valor según cuánto quieras redondear los bordes */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Ajusta estos valores para cambiar el tamaño y la intensidad de la sombra */
 }
 
 .titulos{
@@ -243,10 +262,11 @@ footer{
 }
 
 
-/* Estilos para móviles */
+/* Estilos para moviles */
 @media (max-width:480px){
     body {
         font-size: 14px;
+		
     }
 	
     header h1 {
@@ -258,6 +278,8 @@ footer{
     .contenedor {		
         flex-direction: column;
 		height: auto;
+		width: 100%;
+		box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
     }
     .izquierda, .derecha {
 		margin: 5px;
@@ -265,10 +287,10 @@ footer{
         flex-direction: column;
         width: 100%;
 		align-content: center;
-    }
+		box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+    }	
 	iframe{
-		width: auto;
-		
+		width: auto;		
 	}
 	.thumbnails {
 		display: flex;
@@ -285,6 +307,12 @@ footer{
 	.thumbnails .miniatura{
 		pointer-events: none;		
 	}
+	.close-btn {
+  		position: absolute;
+  		top: -10px;
+  		right: 6px;  		
+	}
+
 	
 	#img1 {
         content: url("../images/mitosgrande1.jpg");
@@ -315,30 +343,9 @@ footer{
 
 /* Estilos para tablets */
 @media (min-width:481px) and (max-width:768px){
-    /*body {
-        font-size: 16px;
-    }
-    header h1 {
-        font-size: 32pt;
-    }
-    header p {
-        font-size: 14pt;
-    }
-    .contenedor {
-        flex-direction: column;
-    }
-    .izquierda, .derecha {
-        flex-direction: column;
-        width: 100%;
-    }
-    #logo {
-        width: 180px;
-        height: 180px;
-    }
-}*/
-	
-	body {
+    body {
         font-size: 14px;
+		
     }
 	
     header h1 {
@@ -350,6 +357,8 @@ footer{
     .contenedor {		
         flex-direction: column;
 		height: auto;
+		width: 100%;
+		box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
     }
     .izquierda, .derecha {
 		margin: 5px;
@@ -357,10 +366,10 @@ footer{
         flex-direction: column;
         width: 100%;
 		align-content: center;
-    }
+		box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+    }	
 	iframe{
-		width: auto;
-		
+		width: auto;		
 	}
 	.thumbnails {
 		display: flex;
@@ -377,6 +386,12 @@ footer{
 	.thumbnails .miniatura{
 		pointer-events: none;		
 	}
+	.close-btn {
+  		position: absolute;
+  		top: -10px;
+  		right: 6px;  		
+	}
+
 	
 	#img1 {
         content: url("../images/mitosgrande1.jpg");
@@ -405,51 +420,80 @@ footer{
     }
 }
 
-
-/* Estilos para portátiles */
-@media (min-width:769px) {
-    body {
-        font-size: 18px;
+@media (min-width:769px) and (max-width:1024px){
+ 	body {
+        font-size: 14px;
+		
     }
+	
     header h1 {
-        font-size: 36pt;
+        font-size: 18pt;
     }
     header p {
-        font-size: 2zpt;
+        font-size: 10pt;
     }
-    .contenedor {
-        flex-direction: row;
+    .contenedor {		
+        flex-direction: column;
+		height: auto;
+		width: 100%;
+		
     }
     .izquierda, .derecha {
+		margin: 5px;
+		padding: 5px;
         flex-direction: column;
-        width: auto;
-    }
-    #logo {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-/* Estilos para landscape en dispositivos pequeños */
-@media (max-width: 768px) and (orientation: landscape) {
-    body {
-        font-size: 16px;
-    }
-    header h1 {
-        font-size: 30pt;
-    }
-    header p {
-        font-size: 14pt;
-    }
-    .contenedor {
-        flex-direction: column;
-    }
-    .izquierda, .derecha {
-        flex: none;
         width: 100%;
+		align-content: center;
+    }	
+	iframe{
+		width: auto;		
+	}
+	.thumbnails {
+		display: flex;
+		flex-direction: column;
+		cursor: default;
+		pointer-events: none;
+	}
+	.thumbnails img {
+  		width: 100%;
+		height: auto;
+  		margin: 5px 0;
+  		cursor: pointer;
+	}
+	.thumbnails .miniatura{
+		pointer-events: none;		
+	}
+	.close-btn {
+  		position: absolute;
+  		top: -10px;
+  		right: 6px;  		
+	}
+
+	
+	#img1 {
+        content: url("../images/mitosgrande1.jpg");
+    }
+    #img2 {
+        content: url("../images/mitosgrande2.jpg");
+    }
+    #img3 {
+        content: url("../images/mitosgrande3.jpg");
+    }
+    #img4 {
+        content: url("../images/mitosgrande4.jpg");
+    }
+    #img5 {
+        content: url("../images/mitosgrande5.jpg");
+    }
+    #img6 {
+        content: url("../images/mitosgrande6.jpg");
+    }
+    #img7 {
+        content: url("../images/mitosgrande7.jpg");
     }
     #logo {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
     }
 }
+
