@@ -267,9 +267,11 @@ footer{
         width: 150px;
         height: 150px;
     }
+	
 	table {
         width: 90%; /* Reduce el ancho de la tabla en pantallas pequeñas */
-		margin-top: 50px;
+		margin-top: 300px;
+		
     }
 
     td {
@@ -313,7 +315,7 @@ footer{
     }
 	table {
         width: 80%; /* Ajusta el ancho de la tabla para tablets */
-		margin-top: 50px;
+		margin-top: 300px;
     }
 
     td {
@@ -356,7 +358,7 @@ footer{
     }
 	table {
         width: 70%; /* Ajusta el ancho de la tabla para portátiles */
-		margin-top: 50px;
+		margin-top: 300px;
     }
 
     td {
