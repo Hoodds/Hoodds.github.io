@@ -89,23 +89,23 @@ nav a:hover {
             font-size: 14pt;
 }
 
-main{
-	height: 72%;
-	flex: 1; /* Hace que el main ocupe todo el espacio restante vertical */
-    overflow-y: auto; /* Agrega desplazamiento vertical si es necesario */	
-	padding:1px;
+main {
+    display: flex;
+    flex-direction: column;
+    height: 72%;
+    flex: 1; /* Hace que el main ocupe todo el espacio restante vertical */
+    overflow-y: auto; /* Agrega desplazamiento vertical si es necesario */
+    padding: 1px;
 }
 
 
 .contenedor {
+    flex: 1;
     display: flex;
-	flex-direction: row;
-    
-    
-    height: 100%;
-	background-color: rgba(26, 5, 10, 0.7); /*  Color de fondo con opacidad */
-    border-radius: 5px; 
-	width: 100%;	
+    flex-direction: row;
+    background-color: rgba(26, 5, 10, 0.7); /*  Color de fondo con opacidad */
+    border-radius: 5px;
+    width: 100%;
 }
 .img-izq {
     margin-right: 10px; /* Ajusta el margen según sea necesario */
@@ -129,6 +129,23 @@ main{
 }
 figcaption{
 	font-size: 14px;
+}
+
+.contenedorabajo {
+    flex: 1;
+    background-color: rgba(26, 5, 10, 0.7); /* Color de fondo con opacidad */
+    border-radius: 5px;
+    margin-top: 10px; /* Espacio entre contenedor y contenedorabajo */
+    padding: 10px;
+	align-content: center
+}
+
+.contenedorabajo ol {
+    padding-left: 20px; /* Ajusta según tus necesidades */
+}
+
+.contenedorabajo ul {
+    padding-left: 20px; /* Ajusta según tus necesidades */
 }
 
 

@@ -132,9 +132,7 @@ main h4{
 	box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
 }
 
-.arriba, .abajo {
-    
-    border-bottom: 1px solid black; /* Separador visual entre la parte arriba y abajo */
+.arriba, .abajo {   
     padding: 10px; /* Espaciado interior para separar el contenido del borde */	
 }
 .firma {
