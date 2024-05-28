@@ -1,6 +1,7 @@
 /* #1a050a COLOR DE FONDO DEL JPG*/
 body {
 	background-image: url("../images/fondo.jpg");
+	
 /*	font-family:Lovecraftian;*/
     margin: 0;
     padding: 0;
@@ -40,7 +41,7 @@ header{
 
 header .text-container {
     text-align: center;
-    flex-grow: 1; /* Permite que el contenedor de texto crezca */	
+   
 }
 
 header h1{
@@ -111,7 +112,7 @@ main h4{
 
 
 .izquierda {
-    flex: 1; /* Ocupa la mitad izquierda del contenedor */
+   
     display: flex;
     flex-direction: column; /* Distribuye los elementos en columnas (arriba y abajo) */
     margin-left: 15px;
@@ -119,7 +120,7 @@ main h4{
 }
 
 .derecha {
-    flex: 1; /* Ocupa la mitad derecha del contenedor */
+    
     border-left: 1px solid black; /* Separador visual entre la parte izquierda y derecha */
 	padding: 10px; /* Espaciado interior para separar el contenido del borde */
 	margin-right: 15px;
@@ -127,9 +128,73 @@ main h4{
 }
 
 .arriba, .abajo {
-    flex: 1; /* Cada parte (arriba y abajo) ocupa la mitad de la parte izquierda */
+    
     border-bottom: 1px solid black; /* Separador visual entre la parte arriba y abajo */
     padding: 10px; /* Espaciado interior para separar el contenido del borde */	
+}
+
+.titulos{
+	text-align: center;
+}
+
+.gallery-container {
+  	margin-top: 20px;
+  	display: flex;
+	flex-direction: row;
+  	
+}
+
+.thumbnails-container {
+  	overflow: hidden;
+  	width: 100%;
+  	display: flex;
+  	justify-content: center;
+}
+
+.thumbnails {
+  	display: flex;
+  	transition: transform 0.3s ease;
+}
+
+.thumbnails img {
+  	width: 100px;
+  	height: 100px;
+  	margin: 0 5px;
+  	cursor: pointer;
+}
+
+
+
+.full-image-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+
+.full-image-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.full-image {
+  max-width: 90%;
+  max-height: 90%;
 }
 
 
@@ -176,63 +241,6 @@ footer{
         background-position: 100% 0; /* Posición en el medio: derecha */
     }
 }
-.gallery-container {
-  margin-top: 20px;
-  position: relative;
-}
-
-.thumbnails-container {
-  overflow: hidden;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.thumbnails {
-  display: flex;
-  transition: transform 0.3s ease;
-}
-
-.thumbnails img {
-  width: 100px;
-  height: 100px;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-
-
-.full-image-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 9999;
-}
-
-.full-image-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: #fff;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-.full-image {
-  max-width: 90%;
-  max-height: 90%;
-}
 
 
 /* Estilos para móviles */
@@ -240,19 +248,62 @@ footer{
     body {
         font-size: 14px;
     }
+	
     header h1 {
-        font-size: 24pt;
+        font-size: 18pt;
     }
     header p {
-        font-size: 12pt;
+        font-size: 10pt;
     }
     .contenedor {
         flex-direction: column;
+		height: auto;
     }
     .izquierda, .derecha {
-        flex: none;
+        flex-direction: column;
         width: 100%;
+		align-content: center;
     }
+	iframe{
+		width: auto;
+	}
+	.thumbnails {
+		display: flex;
+		flex-direction: column;
+	}
+	.thumbnails img {
+  		
+  		margin: 5px 0;
+  		cursor: pointer;
+	}
+	#img1 {
+        content: url('../images/mitosgrande1.jpg');
+    }
+    #img2 {
+        content: url('imagen2-mobile.jpg');
+    }
+    #img3 {
+        content: url('imagen3-mobile.jpg');
+    }
+    #img4 {
+        content: url('imagen4-mobile.jpg');
+    }
+    #img5 {
+        content: url('imagen5-mobile.jpg');
+    }
+    #img6 {
+        content: url('imagen6-mobile.jpg');
+    }
+    #img7 {
+        content: url('imagen7-mobile.jpg');
+    }
+	
+	.close-btn {
+		position: absolute;
+ 		top: 1px;
+ 		right: 5px;
+	}
+
     #logo {
         width: 150px;
         height: 150px;
@@ -274,7 +325,7 @@ footer{
         flex-direction: column;
     }
     .izquierda, .derecha {
-        flex: none;
+        flex-direction: column;
         width: 100%;
     }
     #logo {
@@ -298,7 +349,7 @@ footer{
         flex-direction: row;
     }
     .izquierda, .derecha {
-        flex: 1;
+        flex-direction: column;
         width: auto;
     }
     #logo {
