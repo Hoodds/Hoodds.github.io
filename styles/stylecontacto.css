@@ -261,31 +261,37 @@ footer{
     header p {
         font-size: 10pt;
     }
-    .close-btn {
-  		position: absolute;
-  		top: -10px;
-  		right: 6px;  		
-	}
-	
-	.tabcontent{
-		display: flex;
-		flex-direction: column;
-		
-		
-	}
-	#tab1, #tab2{	
-		display: -webkit -flex;
-		display: -moz -flex;
-		display: flex;
-		flex-direction: column;
-		
-	}
+    
 	
     #logo {
         width: 150px;
         height: 150px;
     }
+	table {
+        width: 90%; /* Reduce el ancho de la tabla en pantallas pequeñas */
+		margin-top: 50px;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    td label {
+        margin-bottom: 5px;
+    }
+
+    td input, td textarea, td button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    td:last-child {
+        text-align: center;
+    }
 }
+
 
 /* Estilos para tablets */
 @media (min-width:481px) and (max-width:768px){
@@ -299,29 +305,34 @@ footer{
     header p {
         font-size: 10pt;
     }
-    .close-btn {
-  		position: absolute;
-  		top: -10px;
-  		right: 6px;  		
-	}
-	
-	.tabcontent{
-		display: flex;
-		flex-direction: column;
-		
-		
-	}
-	#tab1, #tab2{	
-		display: -webkit -flex;
-		display: -moz -flex;
-		display: flex;
-		flex-direction: column;
-		
-	}
+    
 	
     #logo {
         width: 150px;
         height: 150px;
+    }
+	table {
+        width: 80%; /* Ajusta el ancho de la tabla para tablets */
+		margin-top: 50px;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    td label {
+        margin-bottom: 5px;
+    }
+
+    td input, td textarea, td button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    td:last-child {
+        text-align: center;
     }
 }
 
@@ -337,29 +348,34 @@ footer{
     header p {
         font-size: 10pt;
     }
-    .close-btn {
-  		position: absolute;
-  		top: -10px;
-  		right: 6px;  		
-	}
-	
-	.tabcontent{
-		display: flex;
-		flex-direction: column;
-		
-		
-	}
-	#tab1, #tab2{	
-		display: -webkit -flex;
-		display: -moz -flex;
-		display: flex;
-		flex-direction: column;
-		
-	}
+    
 	
     #logo {
         width: 150px;
         height: 150px;
+    }
+	table {
+        width: 70%; /* Ajusta el ancho de la tabla para portátiles */
+		margin-top: 50px;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    td label {
+        margin-bottom: 5px;
+    }
+
+    td input, td textarea, td button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    td:last-child {
+        text-align: center;
     }
 }
 
