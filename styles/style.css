@@ -266,43 +266,47 @@ footer{
     }
 	iframe{
 		width: auto;
+		
 	}
 	.thumbnails {
 		display: flex;
 		flex-direction: column;
+		cursor: default;
+		pointer-events: none;
 	}
 	.thumbnails img {
-  		
+  		width: 100%;
+		height: auto;
   		margin: 5px 0;
   		cursor: pointer;
 	}
+	.thumbnails .miniatura{
+		pointer-events: none;
+		
+	}
+	
 	#img1 {
-        content: url('../images/mitosgrande1.jpg');
+        content: url("../images/mitosgrande1.jpg");
     }
     #img2 {
-        content: url('imagen2-mobile.jpg');
+        content: url("../images/mitosgrande2.jpg");
     }
     #img3 {
-        content: url('imagen3-mobile.jpg');
+        content: url("../images/mitosgrande3.jpg");
     }
     #img4 {
-        content: url('imagen4-mobile.jpg');
+        content: url("../images/mitosgrande4.jpg");
     }
     #img5 {
-        content: url('imagen5-mobile.jpg');
+        content: url("../images/mitosgrande5.jpg");
     }
     #img6 {
-        content: url('imagen6-mobile.jpg');
+        content: url("../images/mitosgrande6.jpg");
     }
     #img7 {
-        content: url('imagen7-mobile.jpg');
+        content: url("../images/mitosgrande7.jpg");
     }
 	
-	.close-btn {
-		position: absolute;
- 		top: 1px;
- 		right: 5px;
-	}
 
     #logo {
         width: 150px;
