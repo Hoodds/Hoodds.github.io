@@ -98,13 +98,25 @@ main{
 
 .contenedor {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
-	background-color: rgba(26, 5, 10, 0.7); /*  Color de fondo con opacidad */
+    background-color: rgba(26, 5, 10, 0.7); /*  Color de fondo con opacidad */
     border-radius: 5px;    
 }
-
+.cita {
+    position: relative;    
+    text-align: center;
+	font-size: 24px; /* Tamaño de fuente para las citas */
+}
+.fuente {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    font-size: 0.8em;
+    color: #ccc; /* Color de la fuente */
+}
 
 
 footer{
@@ -220,6 +232,9 @@ footer{
     header p {
         font-size: 10pt;
     }
+	.contenedor{
+		margin-top: 40px;
+	}
     
 	
     #logo {
@@ -242,7 +257,9 @@ footer{
     header p {
         font-size: 10pt;
     }
-    
+    .contenedor{
+		margin-top: 40px;
+	}
 	
     #logo {
         width: 150px;
