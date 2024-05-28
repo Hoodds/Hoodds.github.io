@@ -255,11 +255,16 @@ footer{
     header p {
         font-size: 10pt;
     }
+	
+	
     .contenedor {
+		
         flex-direction: column;
 		height: auto;
     }
     .izquierda, .derecha {
+		margin: 5px;
+		padding: 5px;
         flex-direction: column;
         width: 100%;
 		align-content: center;
