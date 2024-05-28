@@ -105,47 +105,6 @@ main{
     border-radius: 5px;    
 }
 
-table {
-    width: 100%;
-    max-width: 600px;
-    border-collapse: collapse;
-    background-color: rgba(26, 5, 10, 0.7); /* Fondo con opacidad */
-    border-radius: 5px;
-    margin: 0 auto;
-}
-
-td {
-    padding: 10px;
-    vertical-align: middle;
-    font-family: 'Unutterable-z8E8X';
-    font-size: 16px;
-}
-
-label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-}
-
-input, textarea, button {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    font-family: 'Unutterable-z8E8X';
-    background-color: rgba(26, 5, 10, 0.7); /* Fondo con opacidad */
-    color: #fff;
-}
-
-button {
-    width: auto;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: rgba(26, 5, 10, 0.9); /* Fondo con más opacidad al pasar el ratón */
-}
-
 
 
 footer{
@@ -267,29 +226,7 @@ footer{
         width: 150px;
         height: 150px;
     }
-	table {
-        width: 90%; /* Reduce el ancho de la tabla en pantallas pequeñas */
-		margin-top: 50px;
-    }
-
-    td {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    td label {
-        margin-bottom: 5px;
-    }
-
-    td input, td textarea, td button {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    td:last-child {
-        text-align: center;
-    }
+	
 }
 
 
@@ -311,29 +248,7 @@ footer{
         width: 150px;
         height: 150px;
     }
-	table {
-        width: 80%; /* Ajusta el ancho de la tabla para tablets */
-		margin-top: 50px;
-    }
-
-    td {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    td label {
-        margin-bottom: 5px;
-    }
-
-    td input, td textarea, td button {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    td:last-child {
-        text-align: center;
-    }
+	
 }
 
 /* Estilos para portátiles */
@@ -354,28 +269,6 @@ footer{
         width: 150px;
         height: 150px;
     }
-	table {
-        width: 70%; /* Ajusta el ancho de la tabla para portátiles */
-		margin-top: 50px;
-    }
-
-    td {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    td label {
-        margin-bottom: 5px;
-    }
-
-    td input, td textarea, td button {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    td:last-child {
-        text-align: center;
-    }
+	
 }
 
