@@ -137,7 +137,12 @@ figcaption{
     border-radius: 5px;
     margin-top: 10px; /* Espacio entre contenedor y contenedorabajo */
     padding: 10px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Centra el texto dentro de la lista */
 }
+
 
 .contenedorabajo ol {
     padding-left: 20px; /* Ajusta según tus necesidades */
