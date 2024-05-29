@@ -24,8 +24,8 @@ header{
     margin-right: auto;
 }
 #logo {
-    width: 210px;
-    height: 210px;
+    width: 170px;
+    height: 170px;
     transition: transform 0.3s ease; /* Añade una transición suave */
 }
 #logo:hover {
@@ -44,7 +44,7 @@ header h1{
 }
 header p {
     font-weight: bold;
-    font-size: 15pt;
+    font-size: 14pt;
     background-color: rgba(26, 5, 10, 0.7);
     border-radius: 5px;
     display: inline; /* Hace que el fondo solo ocupe el espacio del texto */   
@@ -281,7 +281,7 @@ footer{
         font-size: 14px;		
     }	
     header h1 {
-        font-size: 28pt;
+        font-size: 22pt;
     }
     header p {
         font-size: 10pt;
@@ -351,10 +351,10 @@ footer{
         font-size: 14px;		
     }	
     header h1 {
-        font-size: 28pt;
+        font-size: 26pt;
     }
     header p {
-        font-size: 12pt;
+        font-size: 10pt;
     }
     .contenedor {
 		all:unset;
