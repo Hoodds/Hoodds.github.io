@@ -28,8 +28,8 @@ header{
 }
 
 #logo {
-    width: 210px;
-    height: 210px;
+    width: 170px;
+    height: 170px;
     transition: transform 0.3s ease; /* Añade una transición suave */
 }
 
@@ -95,18 +95,15 @@ main{
 	padding:1px;
 }
 
+.contenedor {		
+		height: 100%;
+		display:flex;
+		flex-direction: column;		
+		background-color: rgba(26, 5, 10, 0.7); /*  Color de fondo con opacidad */
+    	border-radius: 5px;    
+    }
 
-.contenedor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-	background-color: rgba(26, 5, 10, 0.7); /*  Color de fondo con opacidad */
-    border-radius: 5px;    
-}
-
-table {
-    width: 100%;
+table {    
     max-width: 600px;
     border-collapse: collapse;
     background-color: rgba(26, 5, 10, 0.7); /* Fondo con opacidad */
@@ -129,7 +126,7 @@ label {
 
 input, textarea, button {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #fff;
     border-radius: 5px;
     font-family: 'Unutterable-z8E8X';
@@ -248,8 +245,80 @@ footer{
   max-height: 90%;
 }
 
-
 /* Estilos para móviles */
+@media (max-width:480px){
+    body {
+        font-size: 14px;
+    }
+	
+    header h1 {
+        font-size: 18pt;
+    }
+    header p {
+        font-size: 10pt;
+    }    
+	table {    
+    max-width: 350px;
+	}
+    #logo {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Estilos para tablets */
+@media (min-width:481px) and (max-width:768px){
+   	body {
+        font-size: 14px;
+    }
+	
+    header h1 {
+        font-size: 22pt;
+    }
+    header p {
+        font-size: 10pt;
+    }    
+	table {    
+    	max-width: 450px;
+	}
+    #logo {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Estilos para portátiles */
+@media (min-width:769px) and (max-width:1024px) {
+    body {
+        font-size: 14px;
+    }
+	
+    header h1 {
+        font-size: 26pt;
+    }
+    header p {
+        font-size: 10pt;
+    }
+    #logo {
+        width: 150px;
+        height: 150px;
+    }
+@media (min-width:1400px){	
+ 	body {
+        font-size: 20pt;		
+    }	
+    header h1 {
+        font-size: 60pt;
+    }
+    header p {
+        font-size: 16pt;
+    }
+	#logo {
+        width: 250px;
+        height: 250px;
+    }
+}
+/*
 @media (max-width:480px){
     body {
         font-size: 14px;
@@ -269,7 +338,7 @@ footer{
     }
 	
 	table {
-        width: 90%; /* Reduce el ancho de la tabla en pantallas pequeñas */
+        width: 90%; 
 		margin-top: 300px;
 		
     }
@@ -295,7 +364,7 @@ footer{
 }
 
 
-/* Estilos para tablets */
+
 @media (min-width:481px) and (max-width:768px){
     body {
         font-size: 14px;
@@ -314,7 +383,7 @@ footer{
         height: 150px;
     }
 	table {
-        width: 80%; /* Ajusta el ancho de la tabla para tablets */
+        width: 80%; 
 		margin-top: 300px;
     }
 
@@ -338,7 +407,7 @@ footer{
     }
 }
 
-/* Estilos para portátiles */
+
 @media (min-width:769px) and (max-width:1024px) {
     body {
         font-size: 14px;
@@ -357,7 +426,7 @@ footer{
         height: 150px;
     }
 	table {
-        width: 70%; /* Ajusta el ancho de la tabla para portátiles */
+        width: 70%; 
 		margin-top: 300px;
     }
 
@@ -378,6 +447,6 @@ footer{
 
     td:last-child {
         text-align: center;
-    }
+    }*/
 }
 

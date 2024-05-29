@@ -100,12 +100,14 @@ main{
 		height: 100%;
 		display:flex;
 		flex-direction: column;		
+		background-color: rgba(26, 5, 10, 0.7); /*  Color de fondo con opacidad */
+    	border-radius: 5px;    
     }
 .cita {
     display: flex;
     flex-direction: column;
     text-align: center;
-	font-size: 24px; /* Tamaño de fuente para las citas */
+	font-size: 20px; /* Tamaño de fuente para las citas */
 }
 
 
