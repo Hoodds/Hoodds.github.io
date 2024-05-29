@@ -176,8 +176,8 @@ main h4{
 }
 
 .thumbnails img {
-  	width: 80px; /* cambiado de 100 a 80*/
-  	height: 80px; 
+  	width: 100px;
+  	height: 100px; 
   	margin: 0 5px;
   	cursor: pointer;
 }
