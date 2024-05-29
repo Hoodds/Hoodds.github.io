@@ -118,6 +118,10 @@ main{
 	flex-wrap: wrap;
     gap: 10px;
 }
+.contenidotabs img{
+	width:200px;
+	height: 200px;
+}
 .contenidotabs > .block-container {
             flex: 1 1 calc(25% - 10px);
             box-sizing: border-box;
@@ -145,13 +149,12 @@ main{
 	
 	display: flex;
 	flex-direction: row;
+	align-content: center
 	
 }
 
-#d1, #d2, #d3, #d4{
-	margin-top: 20px;
-	
-	
+#d1, #d2, #d3, #d4, #d5, #d6, #d7, #d8{
+	margin: 30px;	
 }
 
 
