@@ -317,5 +317,25 @@ footer{
         width: 150px;
         height: 150px;
     }
+@media (min-width:1400px){	
+ 	body {
+        font-size: 20pt;		
+    }	
+    header h1 {
+        font-size: 60pt;
+    }
+    header p {
+        font-size: 16pt;
+    }
+    
+	iframe{
+		width: auto;		
+	}
+	#logo {
+        width: 250px;
+        height: 250px;
+    }
 }
+
+
 
