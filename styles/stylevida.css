@@ -267,6 +267,9 @@ footer{
         flex-direction: column;				
 		align-items: center;		
     }
+	.contenedor p{
+		margin-left: 15px;
+	}
 	.contenedorabajo{
 		flex-direction: column;				
 		align-items: center;	
@@ -294,6 +297,9 @@ footer{
         flex-direction: column;				
 		align-items: center;		
     }
+	.contenedor p{
+		margin-left: 15px;
+	}
 	.contenedorabajo{
 		flex-direction: column;				
 		align-items: center;	
@@ -321,6 +327,9 @@ footer{
         flex-direction: column;				
 		align-items: center;		
     }
+	.contenedor p{
+		margin-left: 15px;
+	}
 	.contenedorabajo{
 		flex-direction: column;				
 		align-items: center;	

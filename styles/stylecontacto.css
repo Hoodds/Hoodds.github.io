@@ -250,7 +250,23 @@ footer{
     body {
         font-size: 14px;
     }
-	
+	header{
+		all:unset;	
+		text-align: center;
+    	padding-bottom: 40px;
+		display: flex;
+		display-content: row;
+		font-family:Unutterable-z8E8X;
+	}
+	nav{		
+		all:unset;
+	padding-bottom: 10px;
+	padding-top: 10px;	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-family:Unutterable-z8E8X;	
+}
     header h1 {
         font-size: 18pt;
     }
@@ -271,13 +287,29 @@ footer{
    	body {
         font-size: 14px;
     }
-	
+	header{
+		all:unset;	
+		text-align: center;
+    	padding-bottom: 40px;
+		display: flex;
+		display-content: row;
+		font-family:Unutterable-z8E8X;
+	}
+	nav{		
+		all:unset;
+	padding-bottom: 10px;
+	padding-top: 10px;	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-family:Unutterable-z8E8X;	
+}
     header h1 {
-        font-size: 22pt;
+        font-size: 40pt;
     }
     header p {
-        font-size: 10pt;
-    }    
+        font-size: 14pt;
+    }
 	table {    
     	max-width: 450px;
 	}
@@ -292,12 +324,27 @@ footer{
     body {
         font-size: 14px;
     }
-	
+	header{
+		all:unset;	
+		text-align: center;
+    	padding-bottom: 40px;
+		display: flex;
+		display-content: row;
+		font-family:Unutterable-z8E8X;
+	}
+	nav{		
+	padding-bottom: 10px;
+	padding-top: 10px;	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-family:Unutterable-z8E8X;	
+}
     header h1 {
-        font-size: 26pt;
+        font-size: 40pt;
     }
     header p {
-        font-size: 10pt;
+        font-size: 14pt;
     }
     #logo {
         width: 150px;
@@ -307,6 +354,23 @@ footer{
  	body {
         font-size: 20pt;		
     }	
+	header{
+		all:unset;	
+		text-align: center;
+    	padding-bottom: 40px;
+		display: flex;
+		display-content: row;
+		font-family:Unutterable-z8E8X;
+	}
+	nav{	
+		all:unset;
+	padding-bottom: 10px;
+	padding-top: 10px;	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-family:Unutterable-z8E8X;	
+}
     header h1 {
         font-size: 60pt;
     }
@@ -318,135 +382,5 @@ footer{
         height: 250px;
     }
 }
-/*
-@media (max-width:480px){
-    body {
-        font-size: 14px;
-    }
-	
-    header h1 {
-        font-size: 18pt;
-    }
-    header p {
-        font-size: 10pt;
-    }
-    
-	
-    #logo {
-        width: 150px;
-        height: 150px;
-    }
-	
-	table {
-        width: 90%; 
-		margin-top: 300px;
-		
-    }
 
-    td {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    td label {
-        margin-bottom: 5px;
-    }
-
-    td input, td textarea, td button {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    td:last-child {
-        text-align: center;
-    }
-}
-
-
-
-@media (min-width:481px) and (max-width:768px){
-    body {
-        font-size: 14px;
-    }
-	
-    header h1 {
-        font-size: 18pt;
-    }
-    header p {
-        font-size: 10pt;
-    }
-    
-	
-    #logo {
-        width: 150px;
-        height: 150px;
-    }
-	table {
-        width: 80%; 
-		margin-top: 300px;
-    }
-
-    td {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    td label {
-        margin-bottom: 5px;
-    }
-
-    td input, td textarea, td button {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    td:last-child {
-        text-align: center;
-    }
-}
-
-
-@media (min-width:769px) and (max-width:1024px) {
-    body {
-        font-size: 14px;
-    }
-	
-    header h1 {
-        font-size: 18pt;
-    }
-    header p {
-        font-size: 10pt;
-    }
-    
-	
-    #logo {
-        width: 150px;
-        height: 150px;
-    }
-	table {
-        width: 70%; 
-		margin-top: 300px;
-    }
-
-    td {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    td label {
-        margin-bottom: 5px;
-    }
-
-    td input, td textarea, td button {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    td:last-child {
-        text-align: center;
-    }*/
-}
 

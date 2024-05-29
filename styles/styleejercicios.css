@@ -28,8 +28,8 @@ header{
 }
 
 #logo {
-    width: 210px;
-    height: 210px;
+    width: 170px;
+    height: 170px;
     transition: transform 0.3s ease; /* Añade una transición suave */
 }
 
@@ -115,19 +115,28 @@ main{
 .contenidotabs{
 	display: flex;
     justify-content: center;
-	
+	flex-wrap: wrap;
+    gap: 10px;
 }
-
+.contenidotabs img{
+	width:200px;
+	height: 200px;
+}
+.contenidotabs > .block-container {
+            flex: 1 1 calc(25% - 10px);
+            box-sizing: border-box;
+            width: 25%;
+        }
 .tabcontent {
-    display: none;
-    text-align: left;
-	background-color: #E6E6FA;
-	color:#000000;
-	width: 100%;	
-	padding-left: 6%;
-	
+            display: flex;
+            flex-wrap: wrap;
+            text-align: left;
+            background-color: #E6E6FA;
+            color: #000000;
+            width: 100%;
+            padding-left: 6%;
+        }
 
-}
 .tabcontent p{
 	text-align: left
 }
@@ -137,17 +146,15 @@ main{
 }
 
 #tab1, #tab2{	
-	display: -webkit -flex;
-	display: -moz -flex;
+	
 	display: flex;
 	flex-direction: row;
+	align-content: center
 	
 }
 
-#d1, #d2, #d3, #d4{
-	margin-top: 20px;
-	width: 25%;
-	
+#d1, #d2, #d3, #d4, #d5, #d6, #d7, #d8{
+	margin: 30px;	
 }
 
 
@@ -226,37 +233,34 @@ footer{
 }
 
 
+/* Estilos para móviles */
 @media (max-width:480px){
     body {
         font-size: 14px;
     }
-	
+	header{
+		all:unset;	
+		text-align: center;
+    	padding-bottom: 40px;
+		display: flex;
+		display-content: row;
+		font-family:Unutterable-z8E8X;
+	}
+	nav{		
+		all:unset;
+	padding-bottom: 10px;
+	padding-top: 10px;	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-family:Unutterable-z8E8X;	
+}
     header h1 {
         font-size: 18pt;
     }
     header p {
         font-size: 10pt;
-    }
-    .close-btn {
-  		position: absolute;
-  		top: -10px;
-  		right: 6px;  		
-	}
-	
-	.tabcontent{
-		display: flex;
-		flex-direction: column;
-		
-		
-	}
-	#tab1, #tab2{	
-		display: -webkit -flex;
-		display: -moz -flex;
-		display: flex;
-		flex-direction: column;
-		
-	}
-	
+    }    
     #logo {
         width: 150px;
         height: 150px;
@@ -265,36 +269,32 @@ footer{
 
 /* Estilos para tablets */
 @media (min-width:481px) and (max-width:768px){
-    body {
+   	body {
         font-size: 14px;
     }
-	
+	header{
+		all:unset;	
+		text-align: center;
+    	padding-bottom: 40px;
+		display: flex;
+		display-content: row;
+		font-family:Unutterable-z8E8X;
+	}
+	nav{		
+		all:unset;
+	padding-bottom: 10px;
+	padding-top: 10px;	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-family:Unutterable-z8E8X;	
+}
     header h1 {
-        font-size: 18pt;
+        font-size: 22pt;
     }
     header p {
         font-size: 10pt;
-    }
-    .close-btn {
-  		position: absolute;
-  		top: -10px;
-  		right: 6px;  		
-	}
-	
-	.tabcontent{
-		display: flex;
-		flex-direction: column;
-		
-		
-	}
-	#tab1, #tab2{	
-		display: -webkit -flex;
-		display: -moz -flex;
-		display: flex;
-		flex-direction: column;
-		
-	}
-	
+    }    
     #logo {
         width: 150px;
         height: 150px;
@@ -306,36 +306,45 @@ footer{
     body {
         font-size: 14px;
     }
-	
+	header{
+		all:unset;	
+		text-align: center;
+    	padding-bottom: 40px;
+		display: flex;
+		display-content: row;
+		font-family:Unutterable-z8E8X;
+	}
+	nav{		
+		all:unset;
+		padding-bottom: 10px;
+		padding-top: 10px;	
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		font-family:Unutterable-z8E8X;	
+	}
     header h1 {
-        font-size: 18pt;
+        font-size: 40pt;
     }
     header p {
-        font-size: 10pt;
+        font-size: 14pt;
     }
-    .close-btn {
-  		position: absolute;
-  		top: -10px;
-  		right: 6px;  		
-	}
-	
-	.tabcontent{
-		display: flex;
-		flex-direction: column;
-		
-		
-	}
-	#tab1, #tab2{	
-		display: -webkit -flex;
-		display: -moz -flex;
-		display: flex;
-		flex-direction: column;
-		
-	}
-	
     #logo {
         width: 150px;
         height: 150px;
     }
+@media (min-width:1400px){	
+ 	body {
+        font-size: 20pt;		
+    }	
+    header h1 {
+        font-size: 60pt;
+    }
+    header p {
+        font-size: 16pt;
+    }
+	#logo {
+        width: 250px;
+        height: 250px;
+    }
 }
-

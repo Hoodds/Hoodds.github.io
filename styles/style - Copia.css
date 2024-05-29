@@ -209,30 +209,12 @@ footer{
     body {
         font-size: 14px;		
     }	
-	header{
-		all:unset;	
-		text-align: center;
-    	padding-bottom: 40px;
-		display: flex;
-		display-content: row;
-		font-family:Unutterable-z8E8X;
-	}
-	nav{		
-		all:unset;
-	padding-bottom: 10px;
-	padding-top: 10px;	
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	font-family:Unutterable-z8E8X;	
-}
     header h1 {
         font-size: 18pt;
     }
     header p {
         font-size: 10pt;
     }
-	
     .contenedor {
 		all:unset;
 		height: 100%;
@@ -298,23 +280,6 @@ footer{
     body {
         font-size: 14px;		
     }	
-	header{
-		all:unset;	
-		text-align: center;
-    	padding-bottom: 40px;
-		display: flex;
-		display-content: row;
-		font-family:Unutterable-z8E8X;
-	}
-	nav{		
-		all:unset;
-	padding-bottom: 10px;
-	padding-top: 10px;	
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	font-family:Unutterable-z8E8X;	
-}
     header h1 {
         font-size: 22pt;
     }
@@ -385,28 +350,11 @@ footer{
  	body {
         font-size: 14px;		
     }	
-	header{
-		all:unset;	
-		text-align: center;
-    	padding-bottom: 40px;
-		display: flex;
-		display-content: row;
-		font-family:Unutterable-z8E8X;
-	}
-	nav{		
-		all:unset;
-		padding-bottom: 10px;
-		padding-top: 10px;	
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		font-family:Unutterable-z8E8X;	
-	}
     header h1 {
-        font-size: 40pt;
+        font-size: 26pt;
     }
     header p {
-        font-size: 14pt;
+        font-size: 10pt;
     }
     .contenedor {
 		all:unset;
