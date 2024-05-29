@@ -136,7 +136,9 @@ main{
 	text-decoration: underline;
 }
 
-#tab1, #tab2{		
+#tab1, #tab2{	
+	display: -webkit -flex;
+	display: -moz -flex;
 	display: flex;
 	flex-direction: row;
 	
