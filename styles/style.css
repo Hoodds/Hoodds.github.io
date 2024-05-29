@@ -254,7 +254,7 @@ footer{
 /* Definir la animación para el movimiento de ida y vuelta del fondo*/
 @keyframes moveBackground {
     0%, 100% {
-        background-position: 0 200%; /* Posición inicial y final: izquierda */
+        background-position: 0 150%; /* Posición inicial y final: izquierda */
     }
     50% {
         background-position: 100% 0; /* Posición en el medio: derecha */
