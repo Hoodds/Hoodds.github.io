@@ -176,8 +176,8 @@ main h4{
 }
 
 .thumbnails img {
-  	width: 100px;
-  	height: 100px;
+  	width: 90px; /* cambiado de 100 a 90*/
+  	height: 90px; 
   	margin: 0 5px;
   	cursor: pointer;
 }
@@ -420,7 +420,7 @@ footer{
     }
 }
 
-@media (min-width:769px) and (max-width:1400px){
+@media (min-width:769px) and (max-width:1024px){
  	body {
         font-size: 14px;
 		
