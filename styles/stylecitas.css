@@ -28,8 +28,8 @@ header{
 }
 
 #logo {
-    width: 210px;
-    height: 210px;
+    width: 170px;
+    height: 170px;
     transition: transform 0.3s ease; /* Añade una transición suave */
 }
 
@@ -96,26 +96,16 @@ main{
 }
 
 
-.contenedor {
+.contenedor {		
+		height: 100%;
+		display:flex;
+		flex-direction: column;		
+    }
+.cita {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    background-color: rgba(26, 5, 10, 0.7); /*  Color de fondo con opacidad */
-    border-radius: 5px;    
-}
-.cita {
-    position: relative;    
     text-align: center;
 	font-size: 24px; /* Tamaño de fuente para las citas */
-}
-.fuente {
-    position: absolute;
-    bottom: 0px;
-    right: 0;
-    font-size: 0.8em;
-    color: #ccc; /* Color de la fuente */
 }
 
 
@@ -231,41 +221,29 @@ footer{
     }
     header p {
         font-size: 10pt;
-    }
-	.contenedor{
-		margin-top: 40px;
-	}
-    
-	
+    }    
     #logo {
         width: 150px;
         height: 150px;
     }
-	
 }
-
 
 /* Estilos para tablets */
 @media (min-width:481px) and (max-width:768px){
-    body {
+   	body {
         font-size: 14px;
     }
 	
     header h1 {
-        font-size: 18pt;
+        font-size: 22pt;
     }
     header p {
         font-size: 10pt;
-    }
-    .contenedor{
-		margin-top: 40px;
-	}
-	
+    }    
     #logo {
         width: 150px;
         height: 150px;
     }
-	
 }
 
 /* Estilos para portátiles */
@@ -275,17 +253,27 @@ footer{
     }
 	
     header h1 {
-        font-size: 18pt;
+        font-size: 26pt;
     }
     header p {
         font-size: 10pt;
     }
-    
-	
     #logo {
         width: 150px;
         height: 150px;
     }
-	
+@media (min-width:1400px){	
+ 	body {
+        font-size: 20pt;		
+    }	
+    header h1 {
+        font-size: 60pt;
+    }
+    header p {
+        font-size: 16pt;
+    }
+	#logo {
+        width: 250px;
+        height: 250px;
+    }
 }
-
