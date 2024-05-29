@@ -110,6 +110,7 @@ body {
 
         .contenidotabs {
             display: flex;
+			justify-content: center;
             flex-wrap: wrap;
             gap: 10px;
         }
@@ -145,6 +146,11 @@ body {
 
         #d1, #d2, #d3, #d4 {
             margin-top: 20px;
+			
+			/* AQUI ESTABA PUESTO WIDTH 25% Y ERA LO QUE HACIA QUE SE SOLAPASEN
+			XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+			XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+			XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
         }
 
         footer {
