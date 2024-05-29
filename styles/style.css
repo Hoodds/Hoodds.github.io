@@ -136,11 +136,7 @@ main h4{
 	box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
 }
 
-.arriba, .abajo {
-    
-    
-    padding: 10px; /* Espaciado interior para separar el contenido del borde */	
-}
+
 .firma {
     display: flex;
     justify-content: center;
@@ -278,20 +274,18 @@ footer{
     header p {
         font-size: 10pt;
     }
-    .contenedor {		
-        flex-direction: column;
-		height: auto;
-		width: 100%;
-		box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+    .contenedor {
+		all:unset;
+		height: 100%;
+		display:flex;
+		flex-direction: column;		
     }
-    .izquierda, .derecha {
-		margin: 5px;
-		padding: 5px;
-        flex-direction: column;
-        width: 100%;
-		align-content: center;
-		box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
-    }	
+	.arriba, .abajo{
+		all:unset;
+		display: flex;
+		flex-direction: column;
+		
+	}
 	iframe{
 		width: auto;		
 	}
@@ -357,20 +351,18 @@ footer{
     header p {
         font-size: 10pt;
     }
-    .contenedor {		
-        flex-direction: column;
-		height: auto;
-		width: 100%;
-		box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+    .contenedor {
+		all:unset;
+		height: 100%;
+		display:flex;
+		flex-direction: column;		
     }
-    .izquierda, .derecha {
-		margin: 5px;
-		padding: 5px;
-        flex-direction: column;
-        width: 100%;
-		align-content: center;
-		box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
-    }	
+	.arriba, .abajo{
+		all:unset;
+		display: flex;
+		flex-direction: column;
+		
+	}
 	iframe{
 		width: auto;		
 	}
@@ -424,9 +416,9 @@ footer{
 }
 
 @media (min-width:769px) and (max-width:1024px){
+	
  	body {
-        font-size: 14px;
-		
+        font-size: 14px;		
     }
 	
     header h1 {
@@ -435,66 +427,22 @@ footer{
     header p {
         font-size: 12pt;
     }
-    .contenedor {		
-        flex-direction: column;
-		height: auto;
-		width: 100%;
-		
+    .contenedor {
+		all:unset;
+		height: 100%;
+		display:flex;
+		flex-direction: column;		
     }
-    .izquierda, .derecha {
-		margin: 5px;
-		padding: 5px;
-        flex-direction: column;
-        width: 100%;
-		align-content: center;
-    }	
+	.arriba, .abajo{
+		all:unset;
+		display: flex;
+		flex-direction: column;
+		
+	}	
 	iframe{
 		width: auto;		
 	}
-	.thumbnails {
-		display: flex;
-		flex-direction: column;
-		cursor: default;
-		pointer-events: none;
-	}
-	.thumbnails img {
-  		width: 100%;
-		height: auto;
-  		margin: 5px 0;
-  		cursor: pointer;
-	}
-	.thumbnails .miniatura{
-		pointer-events: none;		
-	}
-	.close-btn {
-  		position: absolute;
-  		top: -10px;
-  		right: 6px;  		
-	}
-
-	
-	#img1 {
-        content: url("../images/mitosgrande1.jpg");
-    }
-    #img2 {
-        content: url("../images/mitosgrande2.jpg");
-    }
-    #img3 {
-        content: url("../images/mitosgrande3.jpg");
-    }
-    #img4 {
-        content: url("../images/mitosgrande4.jpg");
-    }
-    #img5 {
-        content: url("../images/mitosgrande5.jpg");
-    }
-    #img6 {
-        content: url("../images/mitosgrande6.jpg");
-    }
-    #img7 {
-        content: url("../images/mitosgrande7.jpg");
-    }
-    #logo {
+	#logo {
         width: 150px;
         height: 150px;
     }
