@@ -107,9 +107,12 @@ main{
     display: flex;
     flex-direction: column;
     text-align: center;
-	font-size: 20px; /* Tamaño de fuente para las citas */
+	font-size: 18px; /* Tamaño de fuente para las citas */
 }
-
+hr{
+	color: #FFFFFF;
+	width: 50%
+}
 
 footer{
 	padding-top: 5px;
