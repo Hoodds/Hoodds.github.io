@@ -126,6 +126,7 @@ main {
 .contenedor p{
 	margin-right: 30px;
 	text-align: justify;
+	font-size: 1.2em;
 }
 figcaption{
 	font-size: 14px;
@@ -138,14 +139,16 @@ figcaption{
     margin-top: 10px; /* Espacio entre contenedor y contenedorabajo */
     padding: 10px;
     display: flex;
+	flex-direction: column;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
-    text-align: center; /* Centra el texto dentro de la lista */
+    
 }
 
 
 .contenedorabajo ol {
     padding-left: 20px; /* Ajusta según tus necesidades */
+	font-size: 1.2em;
 }
 
 .contenedorabajo ul {
