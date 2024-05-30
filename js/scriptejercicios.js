@@ -495,16 +495,3 @@ function openTab(tabName) {
 
 openTab('tab1'); // Abre la primera pestaña por defecto al cargar la página
 
-/*document.addEventListener('DOMContentLoaded', function() {
-        // Selecciona el elemento donde se mostrará la fecha y hora
-        var currentDateTimeElement = document.getElementById('currentDateTime');
-
-        // Actualiza la fecha y hora cada segundo
-        setInterval(function() {
-            // Obtiene la fecha y hora actual utilizando Day.js
-            var currentDateTime = dayjs().format('YYYY-MM-DD HH:mm:ss');
-
-            // Actualiza el contenido del elemento con la fecha y hora actual
-            currentDateTimeElement.textContent = 'Fecha y Hora: ' + currentDateTime;
-        }, 1000); // Actualiza cada segundo
-    });*/
