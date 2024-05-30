@@ -195,16 +195,14 @@ footer{
 @font-face{
 	font-family: 'Curse of the Zombie';	src:url("../fonts/Curse of the Zombie/Curse of the Zombie.woff"),url("../fonts/Curse of the Zombie/Curse of the Zombie.ttf"),url("../fonts/Curse of the Zombie/Curse of the Zombie.eot"),url("../fonts/Curse of the Zombie/Curse of the Zombie.svg");
 }
-/*  movimiento de ida y vuelta del fondo*/
 @keyframes moveBackground {
     0%, 100% {
-        background-position: 0 150%; /* Posición inicial y final: izquierda */
+        background-position: 0 150%;
     }
     50% {
-        background-position: 100% 0; /* Posición en el medio: derecha */
+        background-position: 100% 0;
     }
 }
-/* Estilos para moviles */
 @media (max-width:480px){
     body {
         font-size: 14px;		
@@ -292,7 +290,6 @@ footer{
         height: 150px;
     }
 }
-/* Estilos para tablets */
 @media (min-width:481px) and (max-width:768px){
     body {
         font-size: 14px;		
